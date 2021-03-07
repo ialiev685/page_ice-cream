@@ -1,1 +1,44 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+:root {
+  --color-white: #ffffff;
+  --color-dark: #000000;
+  --color-gray: #907e82;
+  --color-pink: #ffa5ba;
+  --color-pink-2: #e17992;
+  --color-pink-3: #fea5bb;
+  --color-pink-4: #ffb8ca;
+  --color-accent: #d41443;
+  --color-beige: #f0d1a5;
+  --color-green: #c2e297;
+  --color-title-h1-h2: var(--color-accent);
+  --color-title-second-h1-h2: var(--color-pink);
+  --color-title-h3-h4: var(--color-white);
+  --color-title-h5: var(--color-dark);
+  --color-text-inverse: var(--color-white);
+  --color-text-primary: var(--color-dark);
+  --color-text-second: var(--color-gray);
+  --color-text-accent: var(--color-accent);
+  --color-bg-link-social-footer: var(--color-pink-3);
+  --color-bg-button: var(--color-white);
+  --color-bg-button-inverse: var(--color-accent);
+  --color-bg-card-1: var(--color-pink-4);
+  --color-bg-card-2: var(--color-beige);
+  --color-bg-card-3: var(--color-green);
+}
+
+.button {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  background-color: var(--color-bg-button);
+  border: none;
+  outline: none;
+  border-radius: 22px;
+  color: var(--color-text-accent);
+}
+
+.button.inverse {
+  color: --color-text-white;
+  background-color: var(--color-bg-button-inverse);
+}
+/*# sourceMappingURL=main.css.map */
