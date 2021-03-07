@@ -1,0 +1,21 @@
+:root {
+  --color-white: #ffffff;
+  --color-dark: #000000;
+  --color-gray: #907e82;
+  --color-pink: #ffa5ba;
+  --color-pink-2: #e17992;
+  --color-pink-3: #fea5bb;
+  --color-accent: #d41443;
+  --color-beige: #f0d1a5;
+  --color-green: #c2e297;
+
+  --color-title-h1-h2: var(--color-accent);
+  --color-title-second-h1-h2: var(--color-pink);
+  --color-title-h3-h4: var(--color-white);
+  --color-title-h5: var(--color-dark);
+  --color-text-inverse: var(--color-white);
+  --color-text-primary: var(--color-dark);
+  --color-text-second: var(--color-gray);
+  --color-text-accent: var(--color-pink);
+  --color-bg-link-social-footer: var(--color-pink-3);
+}
