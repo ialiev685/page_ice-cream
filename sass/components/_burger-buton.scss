@@ -1,0 +1,31 @@
+.burger-button {
+  outline: none;
+  border: none;
+
+  background-color: var(--color-bg-header);
+
+  &.is-open {
+    background-color: var(--color-bg-menu-mobile);
+  }
+
+  z-index: 2;
+  &__burger {
+    height: 12px;
+    width: 20px;
+  }
+
+  &__cross {
+    display: none;
+
+    width: 14px;
+    height: 14px;
+  }
+
+  &.is-open &__burger {
+    display: none;
+  }
+
+  &.is-open &__cross {
+    display: block;
+  }
+}

@@ -11,199 +11,243 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <header>
-      <div class="logo"></div>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>About us</li>
-          <li>How it’s made?</li>
-          <li>Our products</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-      <button class="button">Buy now</button>
+    <header class="header">
+      <div class="header__container">
+        <a class="link" href="/" class="logo"
+          ><img src="./image/logo-ice-cream.png" alt="логотип"
+        /></a>
+        <div class="menu-mobile" data-menu>
+          <nav>
+            <ul class="list">
+              <li><a class="link" href=""> Home </a></li>
+              <li><a class="link" href=""> About us </a></li>
+              <li><a class="link" href=""> How it’s made? </a></li>
+              <li><a class="link" href=""> Our products </a></li>
+              <li><a class="link" href=""> Contact</a></li>
+            </ul>
+          </nav>
+          <button class="button">
+            Buy now
+            <svg class="arrow-right" width="8" height="8">
+              <use href="./image/svg/symbol-defs.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+        <button class="burger-button" data-menu-button>
+          <svg height="20" width="20">
+            <use
+              class="burger-button__burger"
+              href="./image/svg/symbol-defs.svg#icon-burger"
+            ></use>
+            <use
+              class="burger-button__cross"
+              href="./image/svg/symbol-defs.svg#icon-cross"
+            ></use>
+          </svg>
+        </button>
+      </div>
     </header>
     <main>
       <section class="section-hero">
-        <div>
-          <h1>ice cream made with passion</h1>
-          <a href="">Products</a> <a href="">How it’s made?</a>
+        <div class="container">
+          <div>
+            <h1>ice cream made with passion</h1>
+            <a href="">Products</a> <a href="">How it’s made?</a>
+          </div>
         </div>
       </section>
       <section class="section-product">
-        <h2><span>100% natural</span> products</h2>
-        <ul>
-          <li>
-            <h3>ice cream</h3>
-            <div class="dot"></div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et. dolore magna aliqua
-              facilisis.
-            </p>
-            <button></button>
-          </li>
-          <li>
-            <h3>ice coffee</h3>
-            <div class="dot"></div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et. dolore magna aliqua
-              facilisis.
-            </p>
-            <button></button>
-          </li>
-          <li>
-            <h3>milkshakes</h3>
-            <div class="dot"></div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et. dolore magna aliqua
-              facilisis.
-            </p>
-            <button></button>
-          </li>
-        </ul>
+        <div class="container">
+          <h2><span>100% natural</span> products</h2>
+          <ul>
+            <li>
+              <h3>ice cream</h3>
+              <div class="dot"></div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et. dolore magna aliqua
+                facilisis.
+              </p>
+              <button></button>
+            </li>
+            <li>
+              <h3>ice coffee</h3>
+              <div class="dot"></div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et. dolore magna aliqua
+                facilisis.
+              </p>
+              <button></button>
+            </li>
+            <li>
+              <h3>milkshakes</h3>
+              <div class="dot"></div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et. dolore magna aliqua
+                facilisis.
+              </p>
+              <button></button>
+            </li>
+          </ul>
+        </div>
       </section>
-
       <section class="section-how-made">
-        <h2><span>tradition and love</span>how it’s made?</h2>
-        <p>
-          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
-          justo fringilla.
-        </p>
-        <p>
-          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
-          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-          tincidunt. Aliquam erat volutpat. Aenean accumsan.
-        </p>
-        <button>Read more</button>
+        <div class="container">
+          <h2><span>tradition and love</span>how it’s made?</h2>
+          <p>
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+            erat at justo fringilla.
+          </p>
+          <p>
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio
+            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
+            massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
+          </p>
+          <button>Read more</button>
+        </div>
       </section>
-      <section class="section-portfolio"></section>
+      <section class="section-portfolio">
+        <div class="container"></div>
+      </section>
       <section class="section-proportions">
-        <ul>
-          <li>
-            <h2>721</h2>
-            <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-          </li>
-          <li>
-            <h2>16kg</h2>
-            <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-          </li>
-          <li>
-            <h2>84</h2>
-            <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul>
+            <li>
+              <h2>721</h2>
+              <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+            <li>
+              <h2>16kg</h2>
+              <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+            <li>
+              <h2>84</h2>
+              <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="section-feedback">
-        <div class="feedback-container">
-          <div>
-            <img src="" alt="" />
-            <p>
-              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-              ipsum primis in nibh vel risus.
-            </p>
+        <div class="container">
+          <div class="feedback-container">
+            <div>
+              <img src="" alt="" />
+              <p>
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+                Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
+                Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+            <div>
+              <img src="" alt="" />
+              <p>
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+                Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
+                Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+            <div>
+              <img src="" alt="" />
+              <p>
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+                Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
+                Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
           </div>
-          <div>
-            <img src="" alt="" />
-            <p>
-              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-              ipsum primis in nibh vel risus.
-            </p>
+          <div class="name-city-container">
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
-          <div>
-            <img src="" alt="" />
-            <p>
-              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-              ipsum primis in nibh vel risus.
-            </p>
-          </div>
-        </div>
-        <div class="name-city-container">
-          <div></div>
-          <div></div>
-          <div></div>
         </div>
       </section>
       <section class="section-working-hours">
-        <ul>
-          <li>
-            <h4>CAFE</h4>
-            <div>
-              <h5>Chicago</h5>
-              <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-            </div>
-            <div>
+        <div class="container">
+          <ul>
+            <li>
+              <h4>CAFE</h4>
               <div>
-                <h5>Monday - Friday</h5>
-                <p>06:00 AM - 10:00 PM</p>
+                <h5>Chicago</h5>
+                <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
               </div>
               <div>
-                <h5>Saturday - Sunday</h5>
-                <p>08:00 AM - 16:00 PM</p>
+                <div>
+                  <h5>Monday - Friday</h5>
+                  <p>06:00 AM - 10:00 PM</p>
+                </div>
+                <div>
+                  <h5>Saturday - Sunday</h5>
+                  <p>08:00 AM - 16:00 PM</p>
+                </div>
               </div>
-            </div>
-            <address>
-              <a href="">+61(0) 383 766 284 </a
-              ><a href="">noreply@envato.com</a>
-            </address>
-          </li>
-          <li>
-            <h4></h4>
-            <div>
-              <h5>FOODTRUCK</h5>
-              <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-            </div>
-            <div>
+              <address>
+                <a href="">+61(0) 383 766 284 </a
+                ><a href="">noreply@envato.com</a>
+              </address>
+            </li>
+            <li>
+              <h4></h4>
               <div>
-                <h5>Monday - Friday</h5>
-                <p>06:00 AM - 10:00 PM</p>
-              </div>
-              <div>
-                <h5>Saturday - Sunday</h5>
-                <p>08:00 AM - 16:00 PM</p>
-              </div>
-            </div>
-            <address>
-              <a href="">+61(0) 383 766 284 </a
-              ><a href="">noreply@envato.com</a>
-            </address>
-          </li>
-          <li>
-            <h4></h4>
-            <div>
-              <h5>CAFE</h5>
-              <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-            </div>
-            <div>
-              <div>
-                <h5>Monday - Friday</h5>
-                <p>06:00 AM - 10:00 PM</p>
+                <h5>FOODTRUCK</h5>
+                <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
               </div>
               <div>
-                <h5>Saturday - Sunday</h5>
-                <p>08:00 AM - 16:00 PM</p>
+                <div>
+                  <h5>Monday - Friday</h5>
+                  <p>06:00 AM - 10:00 PM</p>
+                </div>
+                <div>
+                  <h5>Saturday - Sunday</h5>
+                  <p>08:00 AM - 16:00 PM</p>
+                </div>
               </div>
-            </div>
-            <address>
-              <a href="">+61(0) 383 766 284 </a
-              ><a href="">noreply@envato.com</a>
-            </address>
-          </li>
-        </ul>
-        <button>Our Locations</button>
-        <button>Franchise</button>
+              <address>
+                <a href="">+61(0) 383 766 284 </a
+                ><a href="">noreply@envato.com</a>
+              </address>
+            </li>
+            <li>
+              <h4></h4>
+              <div>
+                <h5>CAFE</h5>
+                <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+              </div>
+              <div>
+                <div>
+                  <h5>Monday - Friday</h5>
+                  <p>06:00 AM - 10:00 PM</p>
+                </div>
+                <div>
+                  <h5>Saturday - Sunday</h5>
+                  <p>08:00 AM - 16:00 PM</p>
+                </div>
+              </div>
+              <address>
+                <a href="">+61(0) 383 766 284 </a
+                ><a href="">noreply@envato.com</a>
+              </address>
+            </li>
+          </ul>
+          <button>Our Locations</button>
+          <button>Franchise</button>
+        </div>
       </section>
-      <footer>
+    </main>
+    <footer>
+      <div class="container">
         <h2><span>homemade ice cream made</span> with passion</h2>
         <div>
           <ul></ul>
@@ -215,7 +259,14 @@
           <a href=""> +61 (0) 383 766 284</a>
         </div>
         <p>© 2019 - IceCream. All Rights Reserved.</p>
-      </footer>
-    </main>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./menu.js"></script>
   </body>
 </html>
