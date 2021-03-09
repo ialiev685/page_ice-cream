@@ -1,0 +1,16 @@
+.section-hero {
+  background-color: var(--color-pink-4);
+  &__caption {
+    font-size: 26px;
+    line-height: 1.15;
+
+    color: var(--color-text-accent);
+  }
+
+  &__caption-small {
+    font-size: 26px;
+    line-height: 30px;
+
+    color: var(--color-text-inverse);
+  }
+}

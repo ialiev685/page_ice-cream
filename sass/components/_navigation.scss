@@ -1,0 +1,15 @@
+.navigation {
+  &__list {
+    border: 1px solid var(--color-border);
+  }
+  &__item {
+    border: 1px solid var(--color-border);
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-text-inverse);
+  }
+}

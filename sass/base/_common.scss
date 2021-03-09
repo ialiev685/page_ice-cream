@@ -1,6 +1,14 @@
 // заголовки
 h1,
 h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h1,
+h2,
 h3 {
   font-family: Titan One;
   font-weight: 400;
@@ -9,25 +17,34 @@ h3 {
   text-transform: uppercase;
 }
 
-h1 {
-  font-size: 26px;
-  line-height: 30px;
+h2 {
+  font-size: 34px;
+  line-height: 1.14;
 }
 
-.header {
-  &__container {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 20px;
+// контейнер
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
 
-    width: 320px;
-  }
+  width: 320px;
 }
 
+// cссылки
 .link {
   text-decoration: none;
 }
 
+// текст и ссылки
+.text,
+.link {
+  font-family: DM Sans, sans-serif;
+}
+
+// списки
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }

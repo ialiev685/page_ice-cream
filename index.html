@@ -20,23 +20,33 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
+      <div class="container header__container">
         <a class="link" href="/" class="logo"
           ><img src="./image/logo-ice-cream.png" alt="логотип"
         /></a>
-        <div class="menu-mobile" data-menu>
-          <nav>
-            <ul class="list">
-              <li><a class="link" href=""> Home </a></li>
-              <li><a class="link" href=""> About us </a></li>
-              <li><a class="link" href=""> How it’s made? </a></li>
-              <li><a class="link" href=""> Our products </a></li>
-              <li><a class="link" href=""> Contact</a></li>
+        <div class="menu-pop-up" data-menu>
+          <nav class="navigation">
+            <ul class="list navigation_list">
+              <li class="navigation__item">
+                <a class="link navigation__link" href="#"> Home </a>
+              </li>
+              <li class="navigation__item">
+                <a class="link navigation__link" href="#"> About us </a>
+              </li>
+              <li class="navigation__item">
+                <a class="link navigation__link" href="#"> How it’s made? </a>
+              </li>
+              <li class="navigation__item">
+                <a class="link navigation__link" href="#"> Our products </a>
+              </li>
+              <li class="navigation__item">
+                <a class="link navigation__link" href="#"> Contact</a>
+              </li>
             </ul>
           </nav>
-          <button class="button">
+          <button class="button menu-pop-up__button">
             Buy now
-            <svg class="arrow-right" width="8" height="8">
+            <svg width="8" height="10" class="arrow-right">
               <use href="./image/svg/symbol-defs.svg#icon-arrow-right"></use>
             </svg>
           </button>
@@ -57,9 +67,14 @@
     </header>
     <main>
       <section class="section-hero">
-        <div class="container">
+        <div class="container section-hero__container">
           <div>
-            <h1>ice cream made with passion</h1>
+            <h1 class="section-hero__caption">
+              <span class="section-hero__caption-small"
+                >ice cream made with</span
+              >
+              passion
+            </h1>
             <a href="">Products</a> <a href="">How it’s made?</a>
           </div>
         </div>
