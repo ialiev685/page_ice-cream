@@ -1,6 +1,11 @@
 .burger-button {
+  display: inline-block;
+
   outline: none;
   border: none;
+
+  padding: 0;
+  margin: 0;
 
   background-color: var(--color-bg-header);
 

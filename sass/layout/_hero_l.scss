@@ -1,0 +1,13 @@
+.section-hero {
+  &__container {
+    padding-top: 137px;
+    padding-bottom: 160px;
+  }
+  &__caption {
+    margin-bottom: 19px;
+  }
+
+  &__button.inverse {
+    margin-right: 8px;
+  }
+}

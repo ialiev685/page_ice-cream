@@ -1,11 +1,15 @@
 .header {
   background-color: var(--color-bg-header);
+  padding-top: 6px;
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     position: relative;
+  }
+
+  &__burger-button {
   }
 }
 

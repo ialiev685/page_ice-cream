@@ -11,7 +11,7 @@
   color: var(--color-text-accent);
 
   &.inverse {
-    color: --color-text-white;
+    color: var(--color-text-inverse);
     background-color: var(--color-bg-button-inverse);
   }
 }
