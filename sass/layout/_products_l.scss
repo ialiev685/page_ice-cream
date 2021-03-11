@@ -1,0 +1,31 @@
+.section-products {
+  &__container {
+    padding-top: 121px;
+    padding-bottom: 98px;
+  }
+  &__caption {
+    margin-bottom: 144px;
+  }
+
+  &__list {
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+    padding: 161px 40px 41px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 130px;
+  }
+
+  &__image {
+    position: absolute;
+    top: -113px;
+  }
+}

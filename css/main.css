@@ -105,11 +105,6 @@ h3 {
   text-transform: uppercase;
 }
 
-h2 {
-  font-size: 34px;
-  line-height: 1.14;
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -249,5 +244,101 @@ h2 {
 
 .section-hero__button.inverse {
   margin-right: 8px;
+}
+
+.section-products__caption {
+  font-size: 18px;
+  line-height: 1.16;
+  color: var(--color-title-second-h1-h2);
+}
+
+.section-products__caption-bold {
+  font-size: 34px;
+  line-height: 1.14;
+  color: var(--color-text-accent);
+}
+
+.section-products__caption-item {
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--color-text-inverse);
+}
+
+.section-products__dot {
+  width: 26px;
+  height: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../image/product-dots.png");
+}
+
+.section-products__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--color-text-inverse);
+}
+
+.section-products__item {
+  border-radius: 24px;
+  height: 485px;
+}
+
+.section-products__item:nth-child(1) {
+  background-color: var(--color-bg-card-1);
+}
+
+.section-products__item:nth-child(2) {
+  background-color: var(--color-bg-card-2);
+}
+
+.section-products__item:nth-child(3) {
+  background-color: var(--color-bg-card-3);
+}
+
+.section-products__button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: url("../image/arrow-right.jpg");
+}
+
+.section-products__container {
+  padding-top: 121px;
+  padding-bottom: 98px;
+}
+
+.section-products__caption {
+  margin-bottom: 144px;
+}
+
+.section-products__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 161px 40px 41px;
+}
+
+.section-products__item:not(:last-child) {
+  margin-bottom: 130px;
+}
+
+.section-products__image {
+  position: absolute;
+  top: -113px;
 }
 /*# sourceMappingURL=main.css.map */
