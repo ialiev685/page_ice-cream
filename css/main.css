@@ -121,10 +121,26 @@ h3 {
   font-family: DM Sans, sans-serif;
 }
 
+.text {
+  color: var(--color-text-primary);
+  margin: 0;
+  padding: 0;
+}
+
+.text-second {
+  color: var(--color-text-second);
+}
+
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .navigation__list {
@@ -193,7 +209,7 @@ h3 {
   line-height: 1.31;
 }
 
-.menu-pop-up .arrow-right {
+.menu-pop-up__arrow-right {
   margin-left: 28px;
 }
 
@@ -315,6 +331,11 @@ h3 {
   margin-bottom: 144px;
 }
 
+.section-products__caption-bold {
+  display: block;
+  margin-top: 15px;
+}
+
 .section-products__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -340,5 +361,149 @@ h3 {
 .section-products__image {
   position: absolute;
   top: -113px;
+}
+
+.section-how-made__caption {
+  font-size: 18px;
+  line-height: 1.16;
+  color: var(--color-title-second-h1-h2);
+}
+
+.section-how-made__caption-bold {
+  font-size: 34px;
+  line-height: 1.14;
+  color: var(--color-title-h1-h2);
+}
+
+.section-how-made__picture-component {
+  width: 280px;
+  height: 279px;
+}
+
+.section-how-made__text, .section-how-made__desc {
+  font-size: 12px;
+  line-height: 1.62;
+  font-weight: 500;
+}
+
+.section-how-made__bg-milk {
+  background-image: url("../image/how-made-bg-milk.png");
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .section-how-made__bg-milk {
+    background-image: url("../image/how-made-bg-milk@2x.png");
+  }
+}
+
+.section-how-made__caption-structure {
+  font-size: 36px;
+  line-height: 1.13;
+  text-align: left;
+  color: var(--color-text-accent);
+}
+
+.section-how-made__item::before {
+  display: inline-block;
+  content: "";
+  height: 50px;
+  max-width: 50px;
+}
+
+.section-how-made__item:nth-child(1) {
+  background-image: url("../image/how-made-milk.png");
+  background-repeat: no-repeat;
+}
+
+.section-how-made__item:nth-child(2) {
+  background-image: url("../image/how-made-apple.png");
+  background-repeat: no-repeat;
+}
+
+.section-how-made__item:nth-child(3) {
+  background-image: url("../image/how-made-ice-cream.png");
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .section-how-made__item:nth-child(1) {
+    background-image: url("../image/how-made-milk@2x.png");
+    background-repeat: no-repeat;
+  }
+  .section-how-made__item:nth-child(2) {
+    background-image: url("../image/how-made-apple@2x.png");
+    background-repeat: no-repeat;
+  }
+  .section-how-made__item:nth-child(3) {
+    background-image: url("../image/how-made-ice-cream@2x.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.section-how-made__container {
+  padding-top: 125px;
+  padding-bottom: 145px;
+  position: relative;
+}
+
+.section-how-made__caption-bold {
+  display: block;
+  margin-top: 15px;
+}
+
+.section-how-made__caption {
+  margin-bottom: 26px;
+}
+
+.section-how-made__picture-component {
+  margin-bottom: 46px;
+}
+
+.section-how-made__discription {
+  padding: 0 30px;
+}
+
+.section-how-made__text:nth-child(1) {
+  margin-bottom: 47px;
+}
+
+.section-how-made__text:nth-child(2) {
+  margin-bottom: 17px;
+}
+
+.section-how-made__bg-milk {
+  position: absolute;
+  top: 766px;
+  left: 0;
+  width: 100%;
+  height: 133px;
+}
+
+.section-how-made__button {
+  padding: 17px 43px;
+  font-size: 14px;
+  line-height: 1.28;
+  margin-bottom: 39px;
+}
+
+.section-how-made__item:not(:last-child) {
+  margin-bottom: 38px;
+}
+
+.section-how-made__item::before {
+  margin-bottom: 16px;
+}
+
+.section-how-made__caption-structure {
+  margin-bottom: 18px;
+}
+
+.section-how-made__arrow-right {
+  margin-left: 19px;
+}
+
+.section-how-made__picture-portfolio {
+  position: absolute;
+  bottom: -74px;
 }
 /*# sourceMappingURL=main.css.map */

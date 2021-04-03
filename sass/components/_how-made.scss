@@ -1,0 +1,84 @@
+.section-how-made {
+  &__caption {
+    font-size: 18px;
+    line-height: 1.16;
+
+    color: var(--color-title-second-h1-h2);
+  }
+
+  &__caption-bold {
+    font-size: 34px;
+    line-height: 1.14;
+
+    color: var(--color-title-h1-h2);
+  }
+
+  &__picture-component {
+    width: 280px;
+    height: 279px;
+  }
+
+  &__text,
+  &__desc {
+    font-size: 12px;
+    line-height: 1.62;
+    font-weight: 500;
+  }
+
+  &__bg-milk {
+    background-image: url("../image/how-made-bg-milk.png");
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    &__bg-milk {
+      background-image: url("../image/how-made-bg-milk@2x.png");
+    }
+  }
+
+  &__caption-structure {
+    font-size: 36px;
+    line-height: 1.13;
+    text-align: left;
+
+    color: var(--color-text-accent);
+  }
+
+  &__item::before {
+    display: inline-block;
+    content: "";
+    height: 50px;
+    max-width: 50px;
+  }
+
+  &__item:nth-child(1) {
+    background-image: url("../image/how-made-milk.png");
+    background-repeat: no-repeat;
+  }
+  &__item:nth-child(2) {
+    background-image: url("../image/how-made-apple.png");
+    background-repeat: no-repeat;
+  }
+  &__item:nth-child(3) {
+    background-image: url("../image/how-made-ice-cream.png");
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    &__item:nth-child(1) {
+      background-image: url("../image/how-made-milk@2x.png");
+      background-repeat: no-repeat;
+    }
+    &__item:nth-child(2) {
+      background-image: url("../image/how-made-apple@2x.png");
+      background-repeat: no-repeat;
+    }
+    &__item:nth-child(3) {
+      background-image: url("../image/how-made-ice-cream@2x.png");
+      background-repeat: no-repeat;
+    }
+  }
+}

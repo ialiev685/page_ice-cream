@@ -46,7 +46,7 @@
           </nav>
           <button class="button menu-pop-up__button">
             Buy now
-            <svg width="8" height="10" class="arrow-right">
+            <svg width="8" height="10" class="menu-pop-up__arrow-right">
               <use href="./image/svg/symbol-defs.svg#icon-arrow-right"></use>
             </svg>
           </button>
@@ -143,43 +143,72 @@
         </div>
       </section>
       <section class="section-how-made">
-        <div class="container">
-          <h2><span>tradition and love</span>how it’s made?</h2>
-          <p>
-            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
-            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
-            erat at justo fringilla.
-          </p>
-          <p>
-            Curabitur lacinia enim at ex blandit, vel pellentesque odio
-            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
-            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
-            massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
-          </p>
-          <button>Read more</button>
-        </div>
-      </section>
-      <section class="section-portfolio">
-        <div class="container"></div>
-      </section>
-      <section class="section-proportions">
-        <div class="container">
-          <ul>
-            <li>
-              <h2>721</h2>
-              <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+        <div class="container section-how-made__container">
+          <h2 class="section-how-made__caption">
+            tradition and love<span class="section-how-made__caption-bold"
+              >how it’s made?</span
+            >
+          </h2>
+          <div class="section-how-made__picture-component">
+            <img
+              class="image"
+              srcset="./image/how-made-cow@2x.png 2x"
+              src="./image/how-made-cow.png"
+              alt="Коровье молоко"
+            />
+          </div>
+          <div class="section-how-made__discription">
+            <p class="text section-how-made__text">
+              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+              justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+              erat at justo fringilla.
+            </p>
+            <p class="text text-second section-how-made__text">
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio
+              elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+              euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+              Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean
+              accumsan.
+            </p>
+            <div class="section-how-made__bg-milk"></div>
+            <button class="button section-how-made__button">
+              Read more
+              <svg width="8" height="10" class="section-how-made__arrow-right">
+                <use href="./image/svg/symbol-defs.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="list">
+            <li class="section-how-made__item">
+              <h2 class="caption section-how-made__caption-structure">721</h2>
+              <p class="text section-how-made__desc">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
             </li>
-            <li>
-              <h2>16kg</h2>
-              <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            <li class="section-how-made__item">
+              <h2 class="caption section-how-made__caption-structure">16kg</h2>
+              <p class="text section-how-made__desc">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
             </li>
-            <li>
-              <h2>84</h2>
-              <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            <li class="section-how-made__item">
+              <h2 class="caption section-how-made__caption-structure">84</h2>
+              <p class="text section-how-made__desc">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
             </li>
           </ul>
+          <div class="section-how-made__picture-portfolio">
+            <img
+              class="image"
+              src="./image/how-made-portfolio.png"
+              srcset="./how-made-portfolio.png 2x"
+              alt="Виды мороженого"
+            />
+          </div>
         </div>
       </section>
+
       <section class="section-feedback">
         <div class="container">
           <div class="feedback-container">
