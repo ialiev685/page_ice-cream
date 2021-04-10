@@ -10,6 +10,7 @@
   --color-accent: #d41443;
   --color-beige: #f0d1a5;
   --color-green: #c2e297;
+  --color-silver: #e1e1e1;
 
   --color-title-h1-h2: var(--color-accent);
   --color-title-second-h1-h2: var(--color-pink);
@@ -19,6 +20,7 @@
   --color-text-primary: var(--color-dark);
   --color-text-second: var(--color-gray);
   --color-text-accent: var(--color-accent);
+  --color-text-pink: var(--color-pink);
   --color-border-accent: var(--color-accent);
   --color-border: var(--color-pink-5);
   --color-bg-link-social-footer: var(--color-pink-3);
@@ -29,4 +31,7 @@
   --color-bg-card-1: var(--color-pink-4);
   --color-bg-card-2: var(--color-beige);
   --color-bg-card-3: var(--color-green);
+  --color-bg-cafe: var(--color-beige);
+  --color-bg-foodtrack: var(--color-green);
+  --color-border-1: var(--color-silver);
 }

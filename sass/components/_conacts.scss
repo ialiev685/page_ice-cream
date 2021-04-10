@@ -1,0 +1,58 @@
+.section-contacts {
+  &__item {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+  }
+  &__establishment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 4px;
+
+    color: var(--color-text-inverse);
+  }
+
+  &__establishment--cafe {
+    width: 80px;
+    height: 16px;
+
+    background-color: var(--color-bg-cafe);
+  }
+
+  &__establishment--foodtrack {
+    width: 130px;
+    height: 16px;
+
+    background-color: var(--color-bg-foodtrack);
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  &__adress,
+  &__opening-hours {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+  }
+
+  &__working-hours {
+    border-top: 1px solid var(--color-border-1);
+    border-bottom: 1px solid var(--color-border-1);
+  }
+
+  &__opening-hours {
+    color: var(--color-text-pink);
+  }
+  &__adress {
+    display: block;
+
+    font-style: normal;
+
+    color: var(--color-text-second);
+  }
+}

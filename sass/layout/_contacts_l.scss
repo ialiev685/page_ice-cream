@@ -1,0 +1,38 @@
+.section-contacts {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    // flex-basis: calc(100%-60px);
+
+    padding: 0 30px;
+  }
+
+  &__item {
+    padding: 43px 20px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__establishment {
+    margin-bottom: 25px;
+  }
+
+  &__place {
+    margin-bottom: 25px;
+  }
+
+  &__caption-city {
+    margin-bottom: 10px;
+  }
+
+  &__working-hours {
+    padding: 25px 0;
+
+    margin-bottom: 25px;
+  }
+
+  &__weekday {
+    margin-bottom: 10px;
+  }
+}
