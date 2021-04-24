@@ -156,6 +156,31 @@ h5 {
   height: auto;
 }
 
+.feedback-discription {
+  background-image: url("../image/marks.png");
+  background-repeat: no-repeat;
+  background-position: 61px 28px;
+}
+
+.feedback-discription__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+}
+
+.feedback-discription__text--name {
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.feedback-discription__continuation {
+  display: block;
+  width: 32px;
+  height: 4px;
+  background-image: url("../image/dots.png");
+}
+
 .navigation__list {
   border: 1px solid var(--color-border);
 }
@@ -617,5 +642,36 @@ h5 {
 
 .section-contacts__weekday {
   margin-bottom: 10px;
+}
+
+.feedback-photo {
+  margin-top: 154px;
+  margin-bottom: 29px;
+}
+
+.feedback-photo__image {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.feedback-discription {
+  padding: 43px 50px 20px 50px;
+}
+
+.feedback-discription__continuation {
+  margin: 50px auto 18px;
+}
+
+.slick-dots {
+  left: 0;
+  bottom: 30px;
+}
+
+.slick-dots .slick-active button::before {
+  display: block;
+  content: "";
+  background-image: url("../image/icon-house.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 /*# sourceMappingURL=main.css.map */
