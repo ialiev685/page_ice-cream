@@ -1,5 +1,5 @@
 .feedback-discription {
-  background-image: url("../image/marks.png");
+  background-image: url("../image/about-us-marks.png");
   background-repeat: no-repeat;
   background-position: 61px 28px;
 
@@ -19,6 +19,30 @@
 
     width: 32px;
     height: 4px;
-    background-image: url("../image/dots.png");
+    background-image: url("../image/about-us-dots.png");
+  }
+}
+
+.slick-dots {
+  left: 0;
+  bottom: 30px;
+  & .dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  & .dot::before {
+    display: block;
+    content: "";
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+
+    background-image: url("../image/about-us-ellipse-gray.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  & .slick-active .dot::before {
+    background-image: url("../image/about-us-icon-house.png");
   }
 }

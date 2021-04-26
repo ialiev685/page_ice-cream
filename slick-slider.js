@@ -10,4 +10,10 @@ $(document).ready(function () {
     slidesToScroll: 1,
     asNavFor: ".feedback-photo",
   });
+
+  const dotsSlick = document.querySelectorAll(".slick-dots button");
+  dotsSlick.forEach((elem, index, array) => {
+    array[index].setAttribute("class", "dot");
+    // array[index].classList.add("dot");
+  });
 });

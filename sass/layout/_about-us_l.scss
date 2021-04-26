@@ -15,16 +15,3 @@
     margin: 50px auto 18px;
   }
 }
-
-.slick-dots {
-  left: 0;
-  bottom: 30px;
-  & .slick-active button::before {
-    display: block;
-    content: "";
-
-    background-image: url("../image/icon-house.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-}
