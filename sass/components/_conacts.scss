@@ -55,4 +55,24 @@
 
     color: var(--color-text-second);
   }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 161px;
+    height: 44px;
+  }
+
+  &__arrow-right {
+    margin-left: 15px;
+  }
+  &__arrow-right {
+    stroke: var(--color-text-accent);
+  }
+
+  &__arrow-right--inverse {
+    stroke: var(--color-text-inverse);
+  }
 }

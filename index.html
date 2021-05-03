@@ -214,7 +214,7 @@
             <img
               class="image"
               src="./image/how-made-portfolio.png"
-              srcset="./how-made-portfolio.png 2x"
+              srcset="./image/how-made-portfolio@2x.png 2x"
               alt="Виды мороженого"
             />
           </div>
@@ -416,24 +416,67 @@
               </address>
             </li>
           </ul>
-          <button>Our Locations</button>
-          <button>Franchise</button>
+          <button class="button inverse section-contacts__button">
+            Our Locations
+            <svg
+              width="8"
+              height="10"
+              class="section-contacts__arrow-right section-contacts__arrow-right--inverse"
+            >
+              <use href="./image/svg/symbol-defs.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+          <button class="button section-contacts__button">
+            Franchise
+            <svg width="8" height="10" class="section-contacts__arrow-right">
+              <use href="./image/svg/symbol-defs.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container">
-        <h2><span>homemade ice cream made</span> with passion</h2>
+    <footer class="footer">
+      <div class="container footer__container">
+        <h2 class="footer__caption">
+          homemade ice cream made
+          <span class="footer__caption-bold">with passion</span>
+        </h2>
         <div>
-          <ul></ul>
-          <ul></ul>
-          <ul></ul>
+          <ul class="list footer__list-social">
+            <li class="footer__item-social">
+              <a href="#" class="link footer__link-social">
+                <svg width="19" height="19" class="footer__icon-social">
+                  <use href="./image/svg/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item-social">
+              <a href="#" class="link footer__link-social">
+                <svg width="19" height="15" class="footer__icon-social">
+                  <use href="./image/svg/symbol-defs.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item-social">
+              <a href="#" class="link footer__link-social">
+                <svg width="9" height="19" class="footer__icon-social">
+                  <use href="./image/svg/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
         <div>
-          <p>Feel free to contact</p>
-          <a href=""> +61 (0) 383 766 284</a>
+          <p class="text footer__contact">
+            Feel free to contact
+            <a class="link footer__link-contact" href="#">
+              +61 (0) 383 766 284</a
+            >
+          </p>
         </div>
-        <p>© 2019 - IceCream. All Rights Reserved.</p>
+        <p class="text footer__all-rights">
+          © 2019 - IceCream. All Rights Reserved.
+        </p>
       </div>
     </footer>
 

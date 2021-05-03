@@ -42,6 +42,7 @@
   border: none;
   outline: none;
   border-radius: 22px;
+  cursor: pointer;
   color: var(--color-text-accent);
 }
 
@@ -90,6 +91,10 @@
   z-index: 1;
   background-color: var(--color-bg-menu-mobile);
   padding: 60px 0;
+}
+
+.menu-pop-up__arrow-right {
+  stroke: var(--color-text-accent);
 }
 
 h1,
@@ -451,6 +456,7 @@ h5 {
 
 .section-how-made__bg-milk {
   background-image: url("../image/how-made-bg-milk.png");
+  background-size: 320px 133px;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -476,30 +482,30 @@ h5 {
 .section-how-made__item:nth-child(1) {
   background-image: url("../image/how-made-milk.png");
   background-repeat: no-repeat;
+  background-size: 33px 50px;
 }
 
 .section-how-made__item:nth-child(2) {
   background-image: url("../image/how-made-apple.png");
   background-repeat: no-repeat;
+  background-size: 50px 50px;
 }
 
 .section-how-made__item:nth-child(3) {
   background-image: url("../image/how-made-ice-cream.png");
   background-repeat: no-repeat;
+  background-size: 44px 50px;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .section-how-made__item:nth-child(1) {
     background-image: url("../image/how-made-milk@2x.png");
-    background-repeat: no-repeat;
   }
   .section-how-made__item:nth-child(2) {
     background-image: url("../image/how-made-apple@2x.png");
-    background-repeat: no-repeat;
   }
   .section-how-made__item:nth-child(3) {
     background-image: url("../image/how-made-ice-cream@2x.png");
-    background-repeat: no-repeat;
   }
 }
 
@@ -629,6 +635,32 @@ h5 {
   color: var(--color-text-second);
 }
 
+.section-contacts__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 161px;
+  height: 44px;
+}
+
+.section-contacts__arrow-right {
+  margin-left: 15px;
+}
+
+.section-contacts__arrow-right {
+  stroke: var(--color-text-accent);
+}
+
+.section-contacts__arrow-right--inverse {
+  stroke: var(--color-text-inverse);
+}
+
 .section-contacts__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -669,6 +701,14 @@ h5 {
   margin-bottom: 10px;
 }
 
+.section-contacts__button {
+  margin: 0 auto;
+}
+
+.section-contacts__button:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .feedback-photo {
   margin-top: 154px;
   margin-bottom: 29px;
@@ -685,5 +725,109 @@ h5 {
 
 .feedback-discription__continuation {
   margin: 50px auto 18px;
+}
+
+.footer__caption {
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: left;
+  color: var(--color-title-second-h1-h2);
+}
+
+.footer__caption-bold {
+  font-size: 34px;
+  line-height: 1.14;
+  color: var(--color-title-h1-h2);
+}
+
+.footer__link-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--color-bg-link-social-footer);
+}
+
+.footer__link-social:hover {
+  background-color: var(--color-text-accent);
+}
+
+.footer__contact {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+}
+
+.footer__link-contact {
+  color: var(--color-text-accent);
+}
+
+.footer__all-rights {
+  width: 140px;
+  height: 42px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  color: var(--color-text-second);
+}
+
+.footer__container {
+  position: relative;
+  padding-top: 113px;
+  padding-bottom: 25px;
+}
+
+.footer__caption {
+  margin-bottom: 43px;
+}
+
+.footer__caption-bold {
+  display: block;
+  margin-top: 17px;
+}
+
+.footer__list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer__item-social:not(:last-child) {
+  margin-right: 28px;
+}
+
+.footer__link-social {
+  margin-bottom: 46px;
+}
+
+.footer__contact {
+  margin-bottom: 43px;
+  text-align: right;
+}
+
+.footer__all-rights {
+  margin: 0 auto;
+}
+
+.footer__all-rights::before {
+  position: absolute;
+  left: 0;
+  bottom: 89px;
+  display: block;
+  content: "";
+  width: 320px;
+  border: 0.5px solid var(--color-border-1);
 }
 /*# sourceMappingURL=main.css.map */

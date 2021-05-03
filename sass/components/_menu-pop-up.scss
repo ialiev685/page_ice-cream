@@ -8,4 +8,8 @@
   background-color: var(--color-bg-menu-mobile);
 
   padding: 60px 0;
+
+  &__arrow-right {
+    stroke: var(--color-text-accent);
+  }
 }

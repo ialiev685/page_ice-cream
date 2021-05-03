@@ -1,0 +1,51 @@
+.footer {
+  &__container {
+    position: relative;
+
+    padding-top: 113px;
+    padding-bottom: 25px;
+  }
+
+  &__caption {
+    margin-bottom: 43px;
+  }
+
+  &__caption-bold {
+    display: block;
+
+    margin-top: 17px;
+  }
+
+  &__list-social {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__item-social:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  &__link-social {
+    margin-bottom: 46px;
+  }
+  &__contact {
+    margin-bottom: 43px;
+
+    text-align: right;
+  }
+
+  &__all-rights {
+    margin: 0 auto;
+  }
+
+  &__all-rights::before {
+    position: absolute;
+    left: 0;
+    bottom: 89px;
+
+    display: block;
+    content: "";
+    width: 320px;
+
+    border: 0.5px solid var(--color-border-1);
+  }
+}

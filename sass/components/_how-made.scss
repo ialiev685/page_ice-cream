@@ -27,6 +27,7 @@
 
   &__bg-milk {
     background-image: url("../image/how-made-bg-milk.png");
+    background-size: 320px 133px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -55,14 +56,17 @@
   &__item:nth-child(1) {
     background-image: url("../image/how-made-milk.png");
     background-repeat: no-repeat;
+    background-size: 33px 50px;
   }
   &__item:nth-child(2) {
     background-image: url("../image/how-made-apple.png");
     background-repeat: no-repeat;
+    background-size: 50px 50px;
   }
   &__item:nth-child(3) {
     background-image: url("../image/how-made-ice-cream.png");
     background-repeat: no-repeat;
+    background-size: 44px 50px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -70,15 +74,12 @@
     screen and (min-resolution: 2dppx) {
     &__item:nth-child(1) {
       background-image: url("../image/how-made-milk@2x.png");
-      background-repeat: no-repeat;
     }
     &__item:nth-child(2) {
       background-image: url("../image/how-made-apple@2x.png");
-      background-repeat: no-repeat;
     }
     &__item:nth-child(3) {
       background-image: url("../image/how-made-ice-cream@2x.png");
-      background-repeat: no-repeat;
     }
   }
 }

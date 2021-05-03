@@ -35,4 +35,11 @@
   &__weekday {
     margin-bottom: 10px;
   }
+  &__button {
+    margin: 0 auto;
+  }
+
+  &__button:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
