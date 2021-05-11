@@ -1,15 +1,33 @@
 .navigation {
   &__list {
-    border: 1px solid var(--color-border);
+    @media screen and (max-width: $desktop - 1) {
+      border: 1px solid var(--color-border);
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+    }
   }
   &__item {
-    border: 1px solid var(--color-border);
+    @media screen and (max-width: $desktop - 1) {
+      border: 1px solid var(--color-border);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    &__item:not(:last-child) {
+      margin-right: 35px;
+    }
   }
 
   &__link {
     font-weight: 700;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28;
     color: var(--color-text-inverse);
+
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.31;
+    }
   }
 }

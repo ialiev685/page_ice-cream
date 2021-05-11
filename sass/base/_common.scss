@@ -31,7 +31,16 @@ h5 {
   margin-right: auto;
   padding: 0 20px;
 
-  width: 320px;
+  width: $mobile;
+
+  @media screen and (min-width: $tablet) {
+    padding: 0 34px;
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    // padding: 38px 34px 0;
+    width: $desktop;
+  }
 }
 
 // cссылки

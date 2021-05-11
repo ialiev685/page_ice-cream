@@ -33,12 +33,13 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a class="link" href="/" class="header__logo"
+        <a href="/" class="link header__logo"
           ><img src="./image/logo-ice-cream.png" alt="логотип"
         /></a>
+        <!-- <div class='header__wrapper'> -->
         <div class="menu-pop-up" data-menu>
           <nav class="navigation">
-            <ul class="list navigation_list">
+            <ul class="list navigation__list">
               <li class="navigation__item">
                 <a class="link navigation__link" href="#"> Home </a>
               </li>
@@ -56,13 +57,14 @@
               </li>
             </ul>
           </nav>
-          <button class="button menu-pop-up__button">
+          <!-- <button class="button menu-pop-up__button">
             Buy now
             <svg width="8" height="10" class="menu-pop-up__arrow-right">
               <use href="./image/svg/symbol-defs.svg#icon-arrow-right"></use>
             </svg>
-          </button>
+          </button> -->
         </div>
+
         <button class="burger-button header__burger-button" data-menu-button>
           <svg height="20" width="20">
             <use
@@ -75,6 +77,14 @@
             ></use>
           </svg>
         </button>
+
+        <button class="button header__button">
+          Buy now
+          <svg width="8" height="10" class="menu-pop-up__arrow-right">
+            <use href="./image/svg/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+        <!-- </div> -->
       </div>
     </header>
     <main>
@@ -264,7 +274,10 @@
               </p>
               <span class="feedback-discription__continuation"></span>
               <p
-                class="text feedback-discription__text feedback-discription__text--name"
+                class="
+                  text
+                  feedback-discription__text feedback-discription__text--name
+                "
               >
                 Alexandra, New York
               </p>
@@ -277,7 +290,10 @@
               </p>
               <span class="feedback-discription__continuation"></span>
               <p
-                class="text feedback-discription__text feedback-discription__text--name"
+                class="
+                  text
+                  feedback-discription__text feedback-discription__text--name
+                "
               >
                 Jenifer, Chicago
               </p>
@@ -290,7 +306,10 @@
               </p>
               <span class="feedback-discription__continuation"></span>
               <p
-                class="text feedback-discription__text feedback-discription__text--name"
+                class="
+                  text
+                  feedback-discription__text feedback-discription__text--name
+                "
               >
                 Emily, Los Angeles
               </p>
@@ -303,7 +322,10 @@
           <ul class="list section-contacts__list">
             <li class="section-contacts__item">
               <h4
-                class="section-contacts__establishment section-contacts__establishment--cafe"
+                class="
+                  section-contacts__establishment
+                  section-contacts__establishment--cafe
+                "
               >
                 CAFE
               </h4>
@@ -341,7 +363,10 @@
             </li>
             <li class="section-contacts__item">
               <h4
-                class="section-contacts__establishment section-contacts__establishment--foodtrack"
+                class="
+                  section-contacts__establishment
+                  section-contacts__establishment--foodtrack
+                "
               >
                 FOODTRUCK
               </h4>
@@ -379,7 +404,10 @@
             </li>
             <li class="section-contacts__item">
               <h4
-                class="section-contacts__establishment section-contacts__establishment--cafe"
+                class="
+                  section-contacts__establishment
+                  section-contacts__establishment--cafe
+                "
               >
                 CAFE
               </h4>
@@ -421,7 +449,10 @@
             <svg
               width="8"
               height="10"
-              class="section-contacts__arrow-right section-contacts__arrow-right--inverse"
+              class="
+                section-contacts__arrow-right
+                section-contacts__arrow-right--inverse
+              "
             >
               <use href="./image/svg/symbol-defs.svg#icon-arrow-right"></use>
             </svg>
