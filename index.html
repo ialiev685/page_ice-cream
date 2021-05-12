@@ -36,7 +36,7 @@
         <a href="/" class="link header__logo"
           ><img src="./image/logo-ice-cream.png" alt="логотип"
         /></a>
-        <!-- <div class='header__wrapper'> -->
+
         <div class="menu-pop-up" data-menu>
           <nav class="navigation">
             <ul class="list navigation__list">
@@ -57,12 +57,6 @@
               </li>
             </ul>
           </nav>
-          <!-- <button class="button menu-pop-up__button">
-            Buy now
-            <svg width="8" height="10" class="menu-pop-up__arrow-right">
-              <use href="./image/svg/symbol-defs.svg#icon-arrow-right"></use>
-            </svg>
-          </button> -->
         </div>
 
         <button class="burger-button header__burger-button" data-menu-button>
@@ -84,21 +78,37 @@
             <use href="./image/svg/symbol-defs.svg#icon-arrow-right"></use>
           </svg>
         </button>
-        <!-- </div> -->
       </div>
     </header>
     <main>
       <section class="section-hero">
         <div class="container section-hero__container">
-          <div>
+          <div class="section-hero__wrapper-product">
             <h1 class="section-hero__caption">
               ice cream made with
               <span class="section-hero__caption-bold">passion</span>
             </h1>
-            <button class="button inverse section-hero__button">
+            <button class="button inverse section-hero__button-disc">
               Products
             </button>
-            <button class="button section-hero__button">How it’s made?</button>
+            <button class="button section-hero__button-disc">
+              How it’s made?
+            </button>
+          </div>
+          <div class="section-hero__wrapper-eco">
+            <p class="text section-hero__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <button class="button section-hero__button-next"></button>
+          </div>
+          <div class="section-hero__wrapper-cafe">
+            <h3 class="section-hero__count-establishment">16</h3>
+            <p class="text section-hero__name-establishment">cafes</p>
+          </div>
+          <div class="section-hero__wrapper-ftruck">
+            <h3 class="section-hero__count-establishment">23</h3>
+            <p class="text section-hero__name-establishment">food trucks</p>
           </div>
         </div>
       </section>

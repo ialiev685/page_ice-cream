@@ -1,13 +1,70 @@
 .section-hero {
   &__container {
+    position: relative;
+
     padding-top: 137px;
     padding-bottom: 160px;
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 15px;
+      padding-bottom: 19px;
+    }
   }
+
+  &__container::before {
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      top: -56px;
+      left: 307px;
+    }
+  }
+
   &__caption {
     margin-bottom: 19px;
   }
 
   &__button.inverse {
     margin-right: 8px;
+  }
+
+  &__wrapper-product {
+    margin-bottom: 66px;
+  }
+  &__wrapper-eco {
+    margin-left: 120px;
+  }
+  &__text {
+    margin-bottom: 7px;
+  }
+
+  &__wrapper-cafe {
+    position: absolute;
+
+    top: 12px;
+    right: 40px; //с учетом белого шарика-псевдоэелемента
+  }
+
+  &__wrapper-ftruck {
+    position: absolute;
+
+    top: 69px;
+    right: 40px; //с учетом белого шарика-псевдоэелемента
+  }
+
+  &__name-establishment::before {
+    position: absolute;
+
+    top: -2px;
+    right: -8px;
+
+    display: inline-block;
+    content: "";
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    background-color: var(--color-text-inverse);
   }
 }

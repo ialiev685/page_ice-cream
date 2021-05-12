@@ -9,6 +9,10 @@
 
   background-color: var(--color-bg-header);
 
+  @media screen and (min-width: $tablet) {
+    background-color: var(--color-bg-burger-button);
+  }
+
   &.is-open {
     background-color: var(--color-bg-menu-mobile);
   }
