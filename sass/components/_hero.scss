@@ -12,13 +12,20 @@
       background-image: url("../image/hero-milk.png"),
         url("../image/hero-ellipse-white.png"),
         url("../image/hero-ellipse-white.png");
-      background-repeat: no-repeat;
       background-size: 124px 126px, 16px 16px, 16px 16px;
       background-position: 34px 158px, 718px 12px, 718px 69px;
+    }
+    @media screen and (min-width: $desktop) {
+      background-image: url("../image/hero-milk.png"),
+        url("../image/hero-ellipse-white.png"),
+        url("../image/hero-ellipse-white.png");
+      background-size: 188px 191px, 30px 30px, 30px 30px;
+      background-position: 77px 342px, 1073px 74px, 1073px 166px;
     }
   }
 
   &__container::before {
+    background-repeat: no-repeat;
     @media screen and (min-width: $tablet) {
       display: block;
       content: "";
@@ -28,9 +35,19 @@
       //розовый круг, мороженое, и девушка
       background-image: url("../image/hero-ice-cream.png"),
         url("../image/hero-girl.png"), url("../image/hero-ellipse.png");
-      background-repeat: no-repeat;
+
       background-size: 143px 336px, 168px 133px, 324px 322px;
       background-position: 71px 32px, 259px 235px, left top;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 696px;
+      height: 613px;
+
+      background-image: url("../image/hero-ice-cream.png"),
+        url("../image/hero-girl.png"), url("../image/hero-ellipse.png");
+
+      background-size: 236px 557px, 293px 232px, 538px 538px;
+      background-position: 119px 56px, 403px 381px, left top;
     }
   }
 
@@ -43,8 +60,16 @@
 
     color: var(--color-text-inverse);
     @media screen and (min-width: $tablet) {
+      width: 162px;
+
       font-size: 25px;
       line-height: 1.13;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 277px;
+
+      font-size: 38px;
+      line-height: 1.15;
     }
   }
 
@@ -54,30 +79,44 @@
 
     color: var(--color-text-accent);
     @media screen and (min-width: $tablet) {
-      width: 162px;
-
       font-size: 34px;
       line-height: 0.95;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 58px;
     }
   }
 
   &__button-disc {
     font-weight: 400;
     font-size: 8px;
-    line-height: 10px;
+    line-height: 1.25;
 
     padding: 9px 14px;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.28;
+
+      padding: 15px 24px;
+    }
   }
 
   &__text {
     width: 114px;
-    height: 48px;
 
     font-weight: 400;
     font-size: 8px;
     line-height: 1.5;
 
     color: var(--color-text-inverse);
+
+    @media screen and (min-width: $desktop) {
+      width: 200px;
+
+      font-size: 14px;
+      line-height: 1.4;
+    }
   }
 
   &__button-next {
@@ -88,6 +127,11 @@
 
     background-image: url("../image/arrow-right.jpg");
     background-size: contain;
+
+    @media screen and (min-width: $desktop) {
+      width: 26px;
+      height: 26px;
+    }
   }
 
   &__count-establishment {
@@ -98,6 +142,10 @@
     text-align: right;
 
     color: var(--color-text-accent);
+    @media screen and (min-width: $desktop) {
+      font-size: 46px;
+      line-height: 1.15;
+    }
   }
 
   &__name-establishment {
@@ -108,5 +156,9 @@
     text-align: right;
 
     color: var(--color-text-inverse);
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.28;
+    }
   }
 }

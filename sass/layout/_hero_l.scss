@@ -7,20 +7,32 @@
 
     @media screen and (min-width: $tablet) {
       padding-top: 15px;
-      padding-bottom: 20px;
+      padding-bottom: 28px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-top: 84px;
+      padding-bottom: 45px;
     }
   }
 
   &__container::before {
     @media screen and (min-width: $tablet) {
       position: absolute;
-      top: -56px;
+      top: -48px;
       left: 307px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      top: -33px;
+      left: 475px;
     }
   }
 
   &__caption {
     margin-bottom: 19px;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 25px;
+    }
   }
 
   &__button.inverse {
@@ -29,18 +41,30 @@
 
   &__wrapper-product {
     margin-bottom: 66px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 112px;
+    }
   }
   &__wrapper-eco {
     display: none;
 
-    margin-left: 120px;
     @media screen and (min-width: $tablet) {
       display: block;
+
+      margin-left: 120px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-left: 180px;
     }
   }
 
   &__text {
     margin-bottom: 7px;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 20px;
+    }
   }
 
   &__wrapper-establishments {
@@ -53,9 +77,16 @@
 
       display: block;
     }
+    @media screen and (min-width: $desktop) {
+      top: 78px;
+      right: 115px;
+    }
   }
 
   &__wrapper-cafe {
     margin-bottom: 14px;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 18px;
+    }
   }
 }

@@ -91,12 +91,15 @@
   display: block;
 }
 
+.menu-pop-up {
+  z-index: 1;
+}
+
 @media screen and (max-width: 1199px) {
   .menu-pop-up {
     display: none;
     width: 250px;
     height: 100vh;
-    z-index: 1;
     background-color: var(--color-bg-menu-mobile);
     padding: 123px 0;
   }
@@ -148,6 +151,7 @@ h5 {
 
 @media screen and (min-width: 1200px) {
   .container {
+    padding: 0 115px;
     width: 1200px;
   }
 }
@@ -407,10 +411,21 @@ h5 {
 @media screen and (min-width: 768px) {
   .section-hero__container {
     background-image: url("../image/hero-milk.png"), url("../image/hero-ellipse-white.png"), url("../image/hero-ellipse-white.png");
-    background-repeat: no-repeat;
     background-size: 124px 126px, 16px 16px, 16px 16px;
     background-position: 34px 158px, 718px 12px, 718px 69px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero__container {
+    background-image: url("../image/hero-milk.png"), url("../image/hero-ellipse-white.png"), url("../image/hero-ellipse-white.png");
+    background-size: 188px 191px, 30px 30px, 30px 30px;
+    background-position: 77px 342px, 1073px 74px, 1073px 166px;
+  }
+}
+
+.section-hero__container::before {
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 768px) {
@@ -420,9 +435,18 @@ h5 {
     width: 427px;
     height: 414px;
     background-image: url("../image/hero-ice-cream.png"), url("../image/hero-girl.png"), url("../image/hero-ellipse.png");
-    background-repeat: no-repeat;
     background-size: 143px 336px, 168px 133px, 324px 322px;
     background-position: 71px 32px, 259px 235px, left top;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero__container::before {
+    width: 696px;
+    height: 613px;
+    background-image: url("../image/hero-ice-cream.png"), url("../image/hero-girl.png"), url("../image/hero-ellipse.png");
+    background-size: 236px 557px, 293px 232px, 538px 538px;
+    background-position: 119px 56px, 403px 381px, left top;
   }
 }
 
@@ -436,8 +460,17 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .section-hero__caption {
+    width: 162px;
     font-size: 25px;
     line-height: 1.13;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero__caption {
+    width: 277px;
+    font-size: 38px;
+    line-height: 1.15;
   }
 }
 
@@ -449,26 +482,46 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .section-hero__caption-bold {
-    width: 162px;
     font-size: 34px;
     line-height: 0.95;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero__caption-bold {
+    font-size: 58px;
   }
 }
 
 .section-hero__button-disc {
   font-weight: 400;
   font-size: 8px;
-  line-height: 10px;
+  line-height: 1.25;
   padding: 9px 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero__button-disc {
+    font-size: 14px;
+    line-height: 1.28;
+    padding: 15px 24px;
+  }
 }
 
 .section-hero__text {
   width: 114px;
-  height: 48px;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.5;
   color: var(--color-text-inverse);
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero__text {
+    width: 200px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
 
 .section-hero__button-next {
@@ -479,6 +532,13 @@ h5 {
   background-size: contain;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-hero__button-next {
+    width: 26px;
+    height: 26px;
+  }
+}
+
 .section-hero__count-establishment {
   font-weight: 400;
   font-size: 28px;
@@ -487,12 +547,26 @@ h5 {
   color: var(--color-text-accent);
 }
 
+@media screen and (min-width: 1200px) {
+  .section-hero__count-establishment {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+
 .section-hero__name-establishment {
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
   text-align: right;
   color: var(--color-text-inverse);
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero__name-establishment {
+    font-size: 14px;
+    line-height: 1.28;
+  }
 }
 
 .section-hero__container {
@@ -504,20 +578,40 @@ h5 {
 @media screen and (min-width: 768px) {
   .section-hero__container {
     padding-top: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero__container {
+    padding-top: 84px;
+    padding-bottom: 45px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .section-hero__container::before {
     position: absolute;
-    top: -56px;
+    top: -48px;
     left: 307px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero__container::before {
+    top: -33px;
+    left: 475px;
   }
 }
 
 .section-hero__caption {
   margin-bottom: 19px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero__caption {
+    margin-bottom: 25px;
+  }
 }
 
 .section-hero__button.inverse {
@@ -528,19 +622,37 @@ h5 {
   margin-bottom: 66px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-hero__wrapper-product {
+    margin-bottom: 112px;
+  }
+}
+
 .section-hero__wrapper-eco {
   display: none;
-  margin-left: 120px;
 }
 
 @media screen and (min-width: 768px) {
   .section-hero__wrapper-eco {
     display: block;
+    margin-left: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero__wrapper-eco {
+    margin-left: 180px;
   }
 }
 
 .section-hero__text {
   margin-bottom: 7px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero__text {
+    margin-bottom: 20px;
+  }
 }
 
 .section-hero__wrapper-establishments {
@@ -556,8 +668,21 @@ h5 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section-hero__wrapper-establishments {
+    top: 78px;
+    right: 115px;
+  }
+}
+
 .section-hero__wrapper-cafe {
   margin-bottom: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero__wrapper-cafe {
+    margin-bottom: 18px;
+  }
 }
 
 .section-products__caption {
