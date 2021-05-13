@@ -8,10 +8,13 @@
     background-position: 117px 36px, 36px 27px;
 
     @media screen and (min-width: $tablet) {
-      background-image: url("../image/hero-milk.png");
+      //молоко, белые кружки
+      background-image: url("../image/hero-milk.png"),
+        url("../image/hero-ellipse-white.png"),
+        url("../image/hero-ellipse-white.png");
       background-repeat: no-repeat;
-      background-size: 124px 126px;
-      background-position: 34px 158px;
+      background-size: 124px 126px, 16px 16px, 16px 16px;
+      background-position: 34px 158px, 718px 12px, 718px 69px;
     }
   }
 
@@ -22,7 +25,7 @@
 
       width: 427px;
       height: 414px;
-
+      //розовый круг, мороженое, и девушка
       background-image: url("../image/hero-ice-cream.png"),
         url("../image/hero-girl.png"), url("../image/hero-ellipse.png");
       background-repeat: no-repeat;
@@ -88,10 +91,6 @@
   }
 
   &__count-establishment {
-    position: relative;
-
-    z-index: 1;
-
     font-weight: 400;
     font-size: 28px;
     line-height: 1.14;

@@ -406,10 +406,10 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .section-hero__container {
-    background-image: url("../image/hero-milk.png");
+    background-image: url("../image/hero-milk.png"), url("../image/hero-ellipse-white.png"), url("../image/hero-ellipse-white.png");
     background-repeat: no-repeat;
-    background-size: 124px 126px;
-    background-position: 34px 158px;
+    background-size: 124px 126px, 16px 16px, 16px 16px;
+    background-position: 34px 158px, 718px 12px, 718px 69px;
   }
 }
 
@@ -480,8 +480,6 @@ h5 {
 }
 
 .section-hero__count-establishment {
-  position: relative;
-  z-index: 1;
   font-weight: 400;
   font-size: 28px;
   line-height: 1.14;
@@ -506,7 +504,7 @@ h5 {
 @media screen and (min-width: 768px) {
   .section-hero__container {
     padding-top: 15px;
-    padding-bottom: 19px;
+    padding-bottom: 20px;
   }
 }
 
@@ -531,35 +529,35 @@ h5 {
 }
 
 .section-hero__wrapper-eco {
+  display: none;
   margin-left: 120px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-hero__wrapper-eco {
+    display: block;
+  }
 }
 
 .section-hero__text {
   margin-bottom: 7px;
 }
 
+.section-hero__wrapper-establishments {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .section-hero__wrapper-establishments {
+    position: absolute;
+    top: 14px;
+    right: 44px;
+    display: block;
+  }
+}
+
 .section-hero__wrapper-cafe {
-  position: absolute;
-  top: 12px;
-  right: 40px;
-}
-
-.section-hero__wrapper-ftruck {
-  position: absolute;
-  top: 69px;
-  right: 40px;
-}
-
-.section-hero__name-establishment::before {
-  position: absolute;
-  top: -2px;
-  right: -8px;
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: var(--color-text-inverse);
+  margin-bottom: 14px;
 }
 
 .section-products__caption {

@@ -7,7 +7,7 @@
 
     @media screen and (min-width: $tablet) {
       padding-top: 15px;
-      padding-bottom: 19px;
+      padding-bottom: 20px;
     }
   }
 
@@ -31,40 +31,31 @@
     margin-bottom: 66px;
   }
   &__wrapper-eco {
+    display: none;
+
     margin-left: 120px;
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
   }
+
   &__text {
     margin-bottom: 7px;
   }
 
+  &__wrapper-establishments {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      top: 14px;
+      right: 44px;
+
+      display: block;
+    }
+  }
+
   &__wrapper-cafe {
-    position: absolute;
-
-    top: 12px;
-    right: 40px; //с учетом белого шарика-псевдоэелемента
-  }
-
-  &__wrapper-ftruck {
-    position: absolute;
-
-    top: 69px;
-    right: 40px; //с учетом белого шарика-псевдоэелемента
-  }
-
-  &__name-establishment::before {
-    position: absolute;
-
-    top: -2px;
-    right: -8px;
-
-    display: inline-block;
-    content: "";
-
-    width: 16px;
-    height: 16px;
-
-    border-radius: 50%;
-
-    background-color: var(--color-text-inverse);
+    margin-bottom: 14px;
   }
 }
