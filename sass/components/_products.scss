@@ -4,6 +4,10 @@
     line-height: 1.16;
 
     color: var(--color-title-second-h1-h2);
+    @media screen and (min-width: $tablet) {
+      font-size: 26px;
+      line-height: 1.15;
+    }
   }
 
   &__caption-bold {
@@ -11,6 +15,10 @@
     line-height: 1.14;
 
     color: var(--color-text-accent);
+    @media screen and (min-width: $tablet) {
+      font-size: 48px;
+      line-height: 1.14;
+    }
   }
 
   &__caption-item {
@@ -20,6 +28,10 @@
     line-height: 1.15;
 
     color: var(--color-text-inverse);
+    @media screen and (min-width: $desktop) {
+      font-size: 30px;
+      line-height: 1.13;
+    }
   }
 
   &__dot {
@@ -42,12 +54,22 @@
     letter-spacing: 0.04em;
 
     color: var(--color-text-inverse);
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 241px;
+    }
   }
 
   &__item {
     border-radius: 24px;
 
     height: 485px;
+    @media screen and (min-width: $desktop) {
+      height: 525px;
+    }
   }
 
   &__item:nth-child(1) {

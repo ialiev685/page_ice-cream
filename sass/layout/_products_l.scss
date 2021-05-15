@@ -2,15 +2,43 @@
   &__container {
     padding-top: 121px;
     padding-bottom: 98px;
+
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 112px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-top: 127px;
+      padding-bottom: 119px;
+    }
   }
   &__caption {
     margin-bottom: 144px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 150px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 259px;
+    }
   }
 
   &__caption-bold {
     display: block;
 
     margin-top: 15px;
+  }
+
+  &__list {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+
+      margin: -10px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin: -15px;
+    }
   }
 
   &__item {
@@ -22,14 +50,42 @@
     position: relative;
 
     padding: 161px 40px 41px;
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc((100% - 2 * 20px) / 3);
+
+      margin: 10px;
+      padding: 152px 11px 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc((100% - 2 * 30px) / 3);
+
+      margin: 15px;
+      padding: 163px 44px 50px;
+    }
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 130px;
+    @media screen and (max-width: $tablet - 1) {
+      margin-bottom: 130px;
+    }
   }
 
   &__image {
     position: absolute;
     top: -113px;
+
+    @media screen and (min-width: $tablet) {
+      top: -102px;
+
+      width: 220px;
+      height: 224px;
+    }
+    @media screen and (min-width: $desktop) {
+      top: -210px;
+
+      width: 335px;
+      height: 335px;
+    }
   }
 }
