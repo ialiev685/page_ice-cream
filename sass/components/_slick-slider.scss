@@ -3,16 +3,39 @@
   background-repeat: no-repeat;
   background-position: 61px 28px;
 
+  @media screen and (min-width: $tablet) {
+    background-position: 40px 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    background-position: 50px 32px;
+  }
+
   &__text {
     font-weight: 500;
     font-size: 12px;
     line-height: 2.58;
 
     text-align: center;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 2.16;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.86;
+    }
   }
   &__text--name {
     font-size: 14px;
     line-height: 1.85;
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.86;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 1.86;
+    }
   }
   &__continuation {
     display: block;
@@ -23,9 +46,9 @@
   }
 }
 
-.slick-dots {
+.slick-dots.slick-dots--bottom {
   left: 0;
-  bottom: 30px;
+  bottom: -5px;
   & .dot {
     width: 12px;
     height: 12px;

@@ -11,8 +11,11 @@ $(document).ready(function () {
     asNavFor: ".feedback-photo",
   });
 
-  const dotsSlick = document.querySelectorAll(".slick-dots button");
-  dotsSlick.forEach((elem, index, array) => {
+  const listDotsEl = document.querySelector(".slick-dots");
+  listDotsEl.classList.add("slick-dots--bottom");
+
+  const btnSlickEl = document.querySelectorAll(".slick-dots button");
+  btnSlickEl.forEach((elem, index, array) => {
     array[index].setAttribute("class", "dot");
     // array[index].classList.add("dot");
   });
