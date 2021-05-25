@@ -1379,6 +1379,14 @@ h5 {
   color: var(--color-text-inverse);
 }
 
+@media screen and (min-width: 768px) {
+  .section-contacts__establishment {
+    font-size: 16px;
+    line-height: 1.86;
+    padding: 14px 16px;
+  }
+}
+
 .section-contacts__establishment--cafe {
   width: 80px;
   height: 16px;
@@ -1392,14 +1400,28 @@ h5 {
 }
 
 .section-contacts__text {
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.2;
 }
 
-.section-contacts__adress, .section-contacts__opening-hours {
+@media screen and (min-width: 768px) {
+  .section-contacts__text {
+    font-size: 16px;
+    line-height: 1.66;
+  }
+}
+
+.section-contacts__adress, .section-contacts__opening-hours, .section-contacts__caption-weekday, .section-contacts__caption-city {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
+}
+
+@media screen and (min-width: 768px) {
+  .section-contacts__adress, .section-contacts__opening-hours, .section-contacts__caption-weekday, .section-contacts__caption-city {
+    font-size: 14px;
+  }
 }
 
 .section-contacts__working-hours {
@@ -1427,6 +1449,9 @@ h5 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
   width: 161px;
   height: 44px;
 }
@@ -1443,6 +1468,10 @@ h5 {
   stroke: var(--color-text-inverse);
 }
 
+.section-contacts__container {
+  padding-bottom: 158px;
+}
+
 .section-contacts__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1454,24 +1483,64 @@ h5 {
   padding: 0 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-contacts__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: -10px;
+    margin-bottom: 81px;
+  }
+}
+
 .section-contacts__item {
   padding: 43px 20px;
 }
 
-.section-contacts__item:not(:last-child) {
-  margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+  .section-contacts__item {
+    padding: 50px 20px;
+    -ms-flex-preferred-size: calc(100% - 2 * 20px)/3;
+        flex-basis: calc(100% - 2 * 20px)/3;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-contacts__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .section-contacts__establishment {
   margin-bottom: 25px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-contacts__establishment {
+    margin-bottom: 30px;
+  }
+}
+
 .section-contacts__place {
   margin-bottom: 25px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-contacts__place {
+    margin-bottom: 30px;
+  }
+}
+
 .section-contacts__caption-city {
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-contacts__caption-city {
+    margin-bottom: 14px;
+  }
 }
 
 .section-contacts__working-hours {
@@ -1479,12 +1548,37 @@ h5 {
   margin-bottom: 25px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-contacts__working-hours {
+    padding: 30px 0;
+  }
+}
+
 .section-contacts__weekday {
   margin-bottom: 10px;
 }
 
-.section-contacts__button {
+@media screen and (min-width: 768px) {
+  .section-contacts__weekday {
+    margin-bottom: 16px;
+  }
+}
+
+.section-contacts__buttons {
+  width: 162px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .section-contacts__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 382px;
+  }
 }
 
 .section-contacts__button:not(:last-child) {

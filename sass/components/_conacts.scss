@@ -13,6 +13,13 @@
     border-radius: 4px;
 
     color: var(--color-text-inverse);
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.86;
+
+      padding: 14px 16px;
+    }
   }
 
   &__establishment--cafe {
@@ -30,14 +37,24 @@
   }
 
   &__text {
+    font-weight: 500;
     font-size: 12px;
     line-height: 1.2;
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.66;
+    }
   }
   &__adress,
-  &__opening-hours {
+  &__opening-hours,
+  &__caption-weekday,
+  &__caption-city {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+    }
   }
 
   &__working-hours {
@@ -60,6 +77,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
 
     width: 161px;
     height: 44px;

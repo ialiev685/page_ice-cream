@@ -1,42 +1,88 @@
 .section-contacts {
+  &__container {
+    padding-bottom: 158px;
+  }
   &__list {
     display: flex;
     flex-direction: column;
-    // flex-basis: calc(100%-60px);
 
     padding: 0 30px;
+
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+
+      margin: -10px;
+
+      margin-bottom: 81px;
+    }
   }
 
   &__item {
     padding: 43px 20px;
+    @media screen and (min-width: $tablet) {
+      padding: 50px 20px;
+
+      flex-basis: calc(100% - 2 * 20px) / 3;
+
+      margin: 10px;
+    }
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 20px;
+    @media screen and (max-width: $tablet - 1) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+    }
   }
   &__establishment {
     margin-bottom: 25px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 30px;
+    }
   }
 
   &__place {
     margin-bottom: 25px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 30px;
+    }
   }
 
   &__caption-city {
     margin-bottom: 10px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 14px;
+    }
   }
 
   &__working-hours {
     padding: 25px 0;
 
     margin-bottom: 25px;
+    @media screen and (min-width: $tablet) {
+      padding: 30px 0;
+    }
   }
 
   &__weekday {
     margin-bottom: 10px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 16px;
+    }
   }
-  &__button {
+
+  &__buttons {
+    width: 162px;
+
     margin: 0 auto;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      justify-content: space-between;
+
+      width: 382px;
+    }
   }
 
   &__button:not(:last-child) {
