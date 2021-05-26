@@ -2,6 +2,15 @@
   &__item {
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+
+    height: 427px;
+
+    @media screen and (min-width: $tablet) {
+      height: 544px;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 572px;
+    }
   }
   &__establishment {
     display: flex;
@@ -12,13 +21,14 @@
 
     border-radius: 4px;
 
+    width: 80px;
+    height: 16px;
+
     color: var(--color-text-inverse);
 
     @media screen and (min-width: $tablet) {
       font-size: 16px;
       line-height: 1.86;
-
-      padding: 14px 16px;
     }
   }
 
@@ -27,6 +37,10 @@
     height: 16px;
 
     background-color: var(--color-bg-cafe);
+    @media screen and (min-width: $tablet) {
+      width: 73px;
+      height: 28px;
+    }
   }
 
   &__establishment--foodtrack {
@@ -34,15 +48,23 @@
     height: 16px;
 
     background-color: var(--color-bg-foodtrack);
+    @media screen and (min-width: $tablet) {
+      width: 138px;
+      height: 28px;
+    }
   }
 
   &__text {
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.2;
+    line-height: 1.58;
     @media screen and (min-width: $tablet) {
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1.66;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.83;
     }
   }
   &__adress,
@@ -54,6 +76,9 @@
     line-height: 1.86;
     @media screen and (min-width: $tablet) {
       font-size: 14px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
     }
   }
 

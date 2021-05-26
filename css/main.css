@@ -1362,6 +1362,19 @@ h5 {
   -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
           box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  height: 427px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-contacts__item {
+    height: 544px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-contacts__item {
+    height: 572px;
+  }
 }
 
 .section-contacts__establishment {
@@ -1376,6 +1389,8 @@ h5 {
           justify-content: center;
   text-align: center;
   border-radius: 4px;
+  width: 80px;
+  height: 16px;
   color: var(--color-text-inverse);
 }
 
@@ -1383,7 +1398,6 @@ h5 {
   .section-contacts__establishment {
     font-size: 16px;
     line-height: 1.86;
-    padding: 14px 16px;
   }
 }
 
@@ -1393,22 +1407,43 @@ h5 {
   background-color: var(--color-bg-cafe);
 }
 
+@media screen and (min-width: 768px) {
+  .section-contacts__establishment--cafe {
+    width: 73px;
+    height: 28px;
+  }
+}
+
 .section-contacts__establishment--foodtrack {
   width: 130px;
   height: 16px;
   background-color: var(--color-bg-foodtrack);
 }
 
+@media screen and (min-width: 768px) {
+  .section-contacts__establishment--foodtrack {
+    width: 138px;
+    height: 28px;
+  }
+}
+
 .section-contacts__text {
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.2;
+  line-height: 1.58;
 }
 
 @media screen and (min-width: 768px) {
   .section-contacts__text {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.66;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-contacts__text {
+    font-size: 16px;
+    line-height: 1.83;
   }
 }
 
@@ -1421,6 +1456,12 @@ h5 {
 @media screen and (min-width: 768px) {
   .section-contacts__adress, .section-contacts__opening-hours, .section-contacts__caption-weekday, .section-contacts__caption-city {
     font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-contacts__adress, .section-contacts__opening-hours, .section-contacts__caption-weekday, .section-contacts__caption-city {
+    font-size: 16px;
   }
 }
 
@@ -1494,15 +1535,41 @@ h5 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section-contacts__list {
+    margin: -15px;
+    margin-bottom: 86px;
+  }
+}
+
 .section-contacts__item {
   padding: 43px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
   .section-contacts__item {
-    padding: 50px 20px;
+    padding: 50px 30px;
     -ms-flex-preferred-size: calc(100% - 2 * 20px)/3;
         flex-basis: calc(100% - 2 * 20px)/3;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-contacts__item {
+    padding: 50px 43px 62px;
+    -ms-flex-preferred-size: calc(100% - 2 * 30px)/3;
+        flex-basis: calc(100% - 2 * 30px)/3;
     margin: 10px;
   }
 }
@@ -1510,26 +1577,6 @@ h5 {
 @media screen and (max-width: 767px) {
   .section-contacts__item:not(:last-child) {
     margin-bottom: 20px;
-  }
-}
-
-.section-contacts__establishment {
-  margin-bottom: 25px;
-}
-
-@media screen and (min-width: 768px) {
-  .section-contacts__establishment {
-    margin-bottom: 30px;
-  }
-}
-
-.section-contacts__place {
-  margin-bottom: 25px;
-}
-
-@media screen and (min-width: 768px) {
-  .section-contacts__place {
-    margin-bottom: 30px;
   }
 }
 
@@ -1544,13 +1591,23 @@ h5 {
 }
 
 .section-contacts__working-hours {
-  padding: 25px 0;
-  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 145px;
+  height: 195px;
 }
 
 @media screen and (min-width: 768px) {
   .section-contacts__working-hours {
-    padding: 30px 0;
+    height: 173px;
   }
 }
 
