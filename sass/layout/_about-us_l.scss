@@ -30,30 +30,26 @@
 }
 
 .feedback-discription {
-  padding: 43px 50px 0 50px;
+  padding: 43px 50px 20px;
+  margin-bottom: 30px;
   @media screen and (min-width: $tablet) {
-    padding: 47px 80px 0 80px;
+    padding: 47px 80px 34px;
+    margin-bottom: 24px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding: 47px 88px 0 88px;
+    padding: 47px 88px 39px;
+    margin-bottom: 15px;
   }
+}
 
-  &__text {
-    margin-bottom: 50px;
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 52px;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-bottom: 54px;
-    }
+.feedback-continuation {
+  margin: 0 auto 18px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 14px;
   }
-
-  &__continuation {
-    margin: 0 auto 18px;
-
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 14px;
-    }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
   }
 }

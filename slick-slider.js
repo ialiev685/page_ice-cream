@@ -2,13 +2,20 @@ $(document).ready(function () {
   $(".feedback-photo").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    asNavFor: ".feedback-discription",
+    asNavFor: ".feedback-discription,.feedback-name",
   });
   $(".feedback-discription").slick({
+    dots: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: ".feedback-photo,.feedback-name",
+  });
+
+  $(".feedback-name").slick({
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    asNavFor: ".feedback-photo",
+    asNavFor: ".feedback-discription,.feedback-photo",
   });
 
   const listDotsEl = document.querySelector(".slick-dots");

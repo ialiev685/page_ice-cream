@@ -226,35 +226,35 @@ h5 {
   }
 }
 
-.feedback-discription__text--name {
-  font-size: 14px;
-  line-height: 1.85;
-}
-
-@media screen and (min-width: 768px) {
-  .feedback-discription__text--name {
-    font-size: 16px;
-    line-height: 1.86;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .feedback-discription__text--name {
-    font-size: 20px;
-    line-height: 1.86;
-  }
-}
-
-.feedback-discription__continuation {
+.feedback-continuation {
   display: block;
   width: 32px;
   height: 4px;
   background-image: url("../image/about-us-dots.png");
 }
 
+.feedback-name__text {
+  font-size: 14px;
+  line-height: 1.85;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .feedback-name__text {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feedback-name__text {
+    font-size: 20px;
+    line-height: 1.86;
+  }
+}
+
 .slick-dots.slick-dots--bottom {
-  left: 0;
-  bottom: -5px;
+  bottom: -45px;
 }
 
 .slick-dots.slick-dots--bottom .dot {
@@ -1682,44 +1682,37 @@ h5 {
 }
 
 .feedback-discription {
-  padding: 43px 50px 0 50px;
+  padding: 43px 50px 20px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .feedback-discription {
-    padding: 47px 80px 0 80px;
+    padding: 47px 80px 34px;
+    margin-bottom: 24px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .feedback-discription {
-    padding: 47px 88px 0 88px;
+    padding: 47px 88px 39px;
+    margin-bottom: 15px;
   }
 }
 
-.feedback-discription__text {
-  margin-bottom: 50px;
-}
-
-@media screen and (min-width: 768px) {
-  .feedback-discription__text {
-    margin-bottom: 52px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .feedback-discription__text {
-    margin-bottom: 54px;
-  }
-}
-
-.feedback-discription__continuation {
+.feedback-continuation {
   margin: 0 auto 18px;
 }
 
 @media screen and (min-width: 768px) {
-  .feedback-discription__continuation {
+  .feedback-continuation {
     margin-bottom: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feedback-continuation {
+    margin-bottom: 15px;
   }
 }
 
