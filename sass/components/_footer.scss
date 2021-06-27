@@ -5,6 +5,19 @@
     text-align: left;
 
     color: var(--color-title-second-h1-h2);
+
+    @media screen and (min-width: $tablet) {
+      width: 340px;
+
+      font-size: 26px;
+      line-height: 1.15;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 474px;
+
+      font-size: 30px;
+      line-height: 1.13;
+    }
   }
 
   &__caption-bold {
@@ -12,6 +25,22 @@
     line-height: 1.14;
 
     color: var(--color-title-h1-h2);
+    @media screen and (min-width: $tablet) {
+      font-size: 48px;
+      line-height: 1.14;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 58px;
+      line-height: 1.13;
+    }
+  }
+  &__wrapper {
+    @media screen and (min-width: $tablet) {
+      width: 268px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 319px;
+    }
   }
 
   &__link-social {
@@ -21,6 +50,10 @@
 
     width: 32px;
     height: 32px;
+    @media screen and (min-width: $tablet) {
+      width: 34px;
+      height: 34px;
+    }
 
     border-radius: 50%;
 
@@ -35,6 +68,12 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+    }
   }
 
   &__link-contact {
@@ -42,12 +81,21 @@
   }
 
   &__all-rights {
-    width: 140px;
+    width: 150px;
+
     height: 42px;
 
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
+    @media screen and (min-width: $tablet) {
+      width: 276px;
+
+      height: 26px;
+
+      line-height: 1.86;
+    }
+
     text-align: center;
 
     color: var(--color-text-second);
