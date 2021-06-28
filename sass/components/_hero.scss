@@ -1,5 +1,6 @@
 .section-hero {
   background-color: var(--color-pink-4);
+
   &__container {
     background-image: url("../image/hero-ice-cream.png"),
       url("../image/hero-ellipse.png");
@@ -21,23 +22,30 @@
         url("../image/hero-ellipse-white.png");
       background-size: 188px 191px, 30px 30px, 30px 30px;
       background-position: 77px 342px, 1073px 74px, 1073px 166px;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url("../image/hero-milk@2x.png");
+      }
     }
   }
 
   &__container::before {
-    background-repeat: no-repeat;
     @media screen and (min-width: $tablet) {
       display: block;
       content: "";
 
       width: 427px;
-      height: 414px;
+      height: 368px;
+
       //розовый круг, мороженое, и девушка
       background-image: url("../image/hero-ice-cream.png"),
         url("../image/hero-girl.png"), url("../image/hero-ellipse.png");
 
       background-size: 143px 336px, 168px 133px, 324px 322px;
       background-position: 71px 32px, 259px 235px, left top;
+      background-repeat: no-repeat;
     }
     @media screen and (min-width: $desktop) {
       width: 696px;
@@ -48,6 +56,13 @@
 
       background-size: 236px 557px, 293px 232px, 538px 538px;
       background-position: 119px 56px, 403px 381px, left top;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url("../image/hero-ice-cream@2x.png"),
+          url("../image/hero-girl@2x.png"), url("../image/hero-ellipse@2x.png");
+      }
     }
   }
 

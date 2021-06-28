@@ -5,26 +5,31 @@
     padding-top: 137px;
     padding-bottom: 160px;
 
+    height: 446px;
+
     @media screen and (min-width: $tablet) {
       padding-top: 15px;
-      padding-bottom: 28px;
+      padding-bottom: 0px;
+
+      height: 312px;
     }
     @media screen and (min-width: $desktop) {
       padding-top: 84px;
-      padding-bottom: 45px;
+
+      height: 578px;
     }
   }
 
   &__container::before {
     @media screen and (min-width: $tablet) {
       position: absolute;
-      top: -48px;
-      left: 307px;
+      bottom: 0;
+      // c учетом отстутов слева и справа
+      left: 274px;
     }
 
     @media screen and (min-width: $desktop) {
-      top: -33px;
-      left: 475px;
+      left: 479px;
     }
   }
 

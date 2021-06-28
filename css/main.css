@@ -337,7 +337,7 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .header__container {
-    padding-top: 38px;
+    padding-top: 37px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -464,8 +464,10 @@ h5 {
   }
 }
 
-.section-hero__container::before {
-  background-repeat: no-repeat;
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-hero__container {
+    background-image: url("../image/hero-milk@2x.png");
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -473,10 +475,11 @@ h5 {
     display: block;
     content: "";
     width: 427px;
-    height: 414px;
+    height: 368px;
     background-image: url("../image/hero-ice-cream.png"), url("../image/hero-girl.png"), url("../image/hero-ellipse.png");
     background-size: 143px 336px, 168px 133px, 324px 322px;
     background-position: 71px 32px, 259px 235px, left top;
+    background-repeat: no-repeat;
   }
 }
 
@@ -487,6 +490,12 @@ h5 {
     background-image: url("../image/hero-ice-cream.png"), url("../image/hero-girl.png"), url("../image/hero-ellipse.png");
     background-size: 236px 557px, 293px 232px, 538px 538px;
     background-position: 119px 56px, 403px 381px, left top;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-hero__container::before {
+    background-image: url("../image/hero-ice-cream@2x.png"), url("../image/hero-girl@2x.png"), url("../image/hero-ellipse@2x.png");
   }
 }
 
@@ -613,34 +622,35 @@ h5 {
   position: relative;
   padding-top: 137px;
   padding-bottom: 160px;
+  height: 446px;
 }
 
 @media screen and (min-width: 768px) {
   .section-hero__container {
     padding-top: 15px;
-    padding-bottom: 28px;
+    padding-bottom: 0px;
+    height: 312px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section-hero__container {
     padding-top: 84px;
-    padding-bottom: 45px;
+    height: 578px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .section-hero__container::before {
     position: absolute;
-    top: -48px;
-    left: 307px;
+    bottom: 0;
+    left: 274px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section-hero__container::before {
-    top: -33px;
-    left: 475px;
+    left: 479px;
   }
 }
 
@@ -1337,6 +1347,7 @@ h5 {
 
 .section-how-made__arrow-right {
   margin-left: 19px;
+  stroke: var(--color-text-accent);
 }
 
 .section-how-made__picture-portfolio {
