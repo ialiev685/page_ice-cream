@@ -5,21 +5,27 @@
     background-position: left 766px;
     background-repeat: no-repeat;
 
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url("../image/how-made-bg-milk@2x.png");
+    }
+
     @media screen and (min-width: $tablet) {
       background-size: 768px 340px;
       background-position: left 331px;
     }
 
     @media screen and (min-width: $desktop) {
-      background-image: url("../image/how-made-bg-milk@2x.png");
+      background-image: url("../image/how-made-bg-milk_d.png");
       background-size: 1200px 534px;
       background-position: left 342px;
-    }
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url("../image/how-made-bg-milk@2x.png");
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url("../image/how-made-bg-milk_d@2x.png");
+      }
     }
   }
 

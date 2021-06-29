@@ -959,6 +959,12 @@ h5 {
   background-repeat: no-repeat;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .section-how-made__container {
+    background-image: url("../image/how-made-bg-milk@2x.png");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .section-how-made__container {
     background-size: 768px 340px;
@@ -968,15 +974,15 @@ h5 {
 
 @media screen and (min-width: 1200px) {
   .section-how-made__container {
-    background-image: url("../image/how-made-bg-milk@2x.png");
+    background-image: url("../image/how-made-bg-milk_d.png");
     background-size: 1200px 534px;
     background-position: left 342px;
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .section-how-made__container {
-    background-image: url("../image/how-made-bg-milk@2x.png");
+    background-image: url("../image/how-made-bg-milk_d@2x.png");
   }
 }
 
