@@ -31,31 +31,30 @@
     />
   </head>
   <body>
-    <header class="header">
+    <span class="scroll-up is-hidden" id="js-scroll-up">Вверх</span>
+    <header class="header" id="js-home">
       <div class="container header__container">
         <a href="/" class="link header__logo"
           ><img src="./image/logo-ice-cream.png" alt="логотип"
         /></a>
 
         <div class="menu-pop-up" data-menu>
-          <nav class="navigation">
+          <nav class="navigation" id="js-navigation">
             <ul class="list navigation__list">
               <li class="navigation__item">
-                <a class="link navigation__link" href="#"> Home </a>
+                <a class="link navigation__link" href="/">Home</a>
               </li>
               <li class="navigation__item">
-                <a class="link navigation__link js-about-us" href="#">
-                  About us
-                </a>
+                <a class="link navigation__link" href="#">About us</a>
               </li>
               <li class="navigation__item">
-                <a class="link navigation__link" href="#"> How it’s made? </a>
+                <a class="link navigation__link" href="#">How it’s made?</a>
               </li>
               <li class="navigation__item">
-                <a class="link navigation__link" href="#"> Our products </a>
+                <a class="link navigation__link" href="#">Our products</a>
               </li>
               <li class="navigation__item">
-                <a class="link navigation__link" href="#"> Contact</a>
+                <a class="link navigation__link" href="#">Contact</a>
               </li>
             </ul>
           </nav>
@@ -123,7 +122,7 @@
             <span class="section-products__caption-bold">products</span>
           </h2>
           <ul class="list section-products__list">
-            <li class="section-products__item">
+            <li class="section-products__item" id="js-our-product">
               <img
                 class="section-products__image"
                 src="./image/product-one.png"
@@ -193,7 +192,7 @@
           </ul>
         </div>
       </section>
-      <section class="section-how-made">
+      <section class="section-how-made" id="js-how-made">
         <div class="container section-how-made__container">
           <h2 class="section-how-made__caption">
             tradition and love<span class="section-how-made__caption-bold"
@@ -294,7 +293,7 @@
         </div>
       </section>
 
-      <section class="section-about-us" id="js-anchor-about-us">
+      <section class="section-about-us" id="js-about-us">
         <div class="container section-about-us__container">
           <div class="feedback-photo">
             <div>
@@ -379,7 +378,7 @@
           </div>
         </div>
       </section>
-      <section class="section-contacts">
+      <section class="section-contacts" id="js-contacts">
         <div class="container section-contacts__container">
           <ul class="list section-contacts__list">
             <li class="section-contacts__item">

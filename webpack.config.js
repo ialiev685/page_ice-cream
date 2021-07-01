@@ -6,17 +6,14 @@ const path = require("path");
 module.exports = {
   mode: "development",
   entry: "./src/index.js",
+  experiments: {
+    asset: true,
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
-
     filename: "main.js",
+    // assetModuleFilename: "assets/[name][ext]", для asset/resourse
   },
-  plugins: [
-    new CopyPlugin({
-      patterns: [{ from: "src/image", to: "dest" }],
-    }),
-    new CleanWebpackPlugin(),
-  ],
 
   module: {
     rules: [
@@ -35,7 +32,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
         // More information here https://webpack.js.org/guides/asset-modules/
 
-        type: "asset",
+        type: "asset/inline",
       },
 
       {
@@ -50,7 +47,13 @@ module.exports = {
       },
     ],
   },
-  plugins: [new HtmlWebpackPlugin({ template: "src/index.html" })],
+  plugins: [
+    new HtmlWebpackPlugin({ template: "src/index.html" }),
+    new CleanWebpackPlugin(),
+    new CopyPlugin({
+      patterns: [{ from: "src/image", to: "image" }],
+    }),
+  ],
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     // compress: true,
