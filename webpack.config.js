@@ -1,4 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -6,8 +8,15 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
+
     filename: "main.js",
   },
+  plugins: [
+    new CopyPlugin({
+      patterns: [{ from: "src/image", to: "dest" }],
+    }),
+    new CleanWebpackPlugin(),
+  ],
 
   module: {
     rules: [
@@ -28,6 +37,7 @@ module.exports = {
 
         type: "asset",
       },
+
       {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
