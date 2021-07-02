@@ -48,8 +48,8 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: "src/index.html" }),
     new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({ template: "src/index.html" }),
     new CopyPlugin({
       patterns: [{ from: "src/image", to: "image" }],
     }),
