@@ -1,0 +1,55 @@
+.section-about-us {
+  &__container {
+    padding-top: 154px;
+    padding-bottom: 86px;
+
+    margin-bottom: -30px; //так от slick-slider по умолчанию идет отсутп 30px
+    @media screen and (min-width: $tablet) {
+      padding: 279px 74px 119px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 382px 177px 132px;
+    }
+  }
+}
+
+.feedback-photo {
+  margin-bottom: 29px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 19px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
+  }
+
+  &__image {
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+}
+
+.feedback-discription {
+  padding: 43px 50px 20px;
+  margin-bottom: 30px;
+  @media screen and (min-width: $tablet) {
+    padding: 47px 80px 34px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 47px 88px 39px;
+    margin-bottom: 15px;
+  }
+}
+
+.feedback-continuation {
+  margin: 0 auto 18px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,41 @@
+:root {
+  --color-white: #ffffff;
+  --color-dark: #000000;
+  --color-gray: #907e82;
+  --color-pink: #ffa5ba;
+  --color-pink-2: #e17992;
+  --color-pink-3: #fea5bb;
+  --color-pink-4: #ffb8ca;
+  --color-pink-5: #e18298;
+  --color-accent: #d41443;
+  --color-beige: #f0d1a5;
+  --color-green: #c2e297;
+  --color-silver: #e1e1e1;
+
+  --color-title-h1-h2: var(--color-accent);
+  --color-title-second-h1-h2: var(--color-pink);
+  --color-title-h3-h4: var(--color-white);
+  --color-title-h5: var(--color-dark);
+  --color-text-inverse: var(--color-white);
+  --color-text-primary: var(--color-dark);
+  --color-text-second: var(--color-gray);
+  --color-text-accent: var(--color-accent);
+  --color-text-pink: var(--color-pink);
+  --color-border-accent: var(--color-accent);
+  --color-border: var(--color-pink-5);
+  --color-bg-link-social-footer: var(--color-pink-3);
+  --color-bg-button: var(--color-white);
+  --color-bg-burger-button: var(--color-pink);
+  --color-bg-button-inverse: var(--color-accent);
+  --color-bg-menu-mobile: var(--color-pink-2);
+  --color-bg-header: var(--color-pink-4);
+  --color-bg-card-1: var(--color-pink-4);
+  --color-bg-card-2: var(--color-beige);
+  --color-bg-card-3: var(--color-green);
+  --color-bg-cafe: var(--color-beige);
+  --color-bg-foodtrack: var(--color-green);
+  --color-border-1: var(--color-silver);
+}
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1200px;

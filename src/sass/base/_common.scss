@@ -1,0 +1,79 @@
+// заголовки
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Titan One;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+h4,
+h5 {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+}
+
+// контейнер
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+
+  width: $mobile;
+
+  @media screen and (min-width: $tablet) {
+    padding: 0 34px;
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 0 115px;
+    width: $desktop;
+  }
+}
+
+// cссылки
+.link {
+  text-decoration: none;
+}
+
+// текст и ссылки
+.text,
+.link {
+  font-family: DM Sans, sans-serif;
+}
+//text - основной цвет
+.text {
+  color: var(--color-text-primary);
+  margin: 0;
+  padding: 0;
+}
+
+.text-second {
+  color: var(--color-text-second);
+}
+
+// списки
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+//контентное изображение
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

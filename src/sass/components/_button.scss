@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+
+  font-family: DM Sans;
+
+  background-color: var(--color-bg-button);
+  border: none;
+  outline: none;
+  border-radius: 22px;
+
+  cursor: pointer;
+
+  color: var(--color-text-accent);
+
+  &.inverse {
+    color: var(--color-text-inverse);
+    background-color: var(--color-bg-button-inverse);
+  }
+}

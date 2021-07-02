@@ -1,0 +1,173 @@
+.section-how-made {
+  &__container {
+    background-image: url("../image/how-made-bg-milk.png");
+    background-size: 320px 133px;
+    background-position: left 766px;
+    background-repeat: no-repeat;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url("../image/how-made-bg-milk@2x.png");
+    }
+
+    @media screen and (min-width: $tablet) {
+      background-size: 768px 340px;
+      background-position: left 331px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      background-image: url("../image/how-made-bg-milk_d.png");
+      background-size: 1200px 534px;
+      background-position: left 342px;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url("../image/how-made-bg-milk_d@2x.png");
+      }
+    }
+  }
+
+  &__caption {
+    font-size: 18px;
+    line-height: 1.16;
+
+    color: var(--color-title-second-h1-h2);
+
+    @media screen and (min-width: $tablet) {
+      font-size: 26px;
+      line-height: 1.15;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 30px;
+      line-height: 1.13;
+    }
+  }
+
+  &__caption-bold {
+    font-size: 34px;
+    line-height: 1.14;
+
+    color: var(--color-title-h1-h2);
+    @media screen and (min-width: $tablet) {
+      font-size: 48px;
+      line-height: 1.14;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 58px;
+      line-height: 1.13;
+    }
+  }
+
+  &__picture-component {
+    width: 280px;
+    height: 279px;
+
+    @media screen and (min-width: $tablet) {
+      width: 340px;
+      height: 339px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 516px;
+      height: 516px;
+    }
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__text.is-hidden {
+    height: 290px;
+    overflow: hidden;
+  }
+
+  &__text,
+  &__desc {
+    font-size: 12px;
+    line-height: 1.62;
+    font-weight: 500;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 1.76;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.76;
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    &__bg-milk {
+      background-image: url("../image/how-made-bg-milk@2x.png");
+    }
+  }
+
+  &__caption-structure {
+    font-size: 36px;
+    line-height: 1.13;
+    text-align: left;
+
+    color: var(--color-text-accent);
+
+    @media screen and (min-width: $tablet) {
+      font-size: 48px;
+      line-height: 1.14;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 58px;
+      line-height: 1.13;
+    }
+  }
+
+  &__item {
+    @media screen and (min-width: $tablet) {
+      width: 180px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 330px;
+    }
+  }
+
+  &__item::before {
+    display: inline-block;
+    content: "";
+    height: 50px;
+    max-width: 50px;
+  }
+
+  &__item:nth-child(1) {
+    background-image: url("../image/how-made-milk.png");
+    background-repeat: no-repeat;
+    background-size: 33px 50px;
+  }
+  &__item:nth-child(2) {
+    background-image: url("../image/how-made-apple.png");
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+  }
+  &__item:nth-child(3) {
+    background-image: url("../image/how-made-ice-cream.png");
+    background-repeat: no-repeat;
+    background-size: 44px 50px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    &__item:nth-child(1) {
+      background-image: url("../image/how-made-milk@2x.png");
+    }
+    &__item:nth-child(2) {
+      background-image: url("../image/how-made-apple@2x.png");
+    }
+    &__item:nth-child(3) {
+      background-image: url("../image/how-made-ice-cream@2x.png");
+    }
+  }
+}

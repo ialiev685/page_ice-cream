@@ -1,0 +1,87 @@
+.feedback-discription {
+  background-image: url("../image/about-us-marks.png");
+  background-repeat: no-repeat;
+  background-position: 61px 28px;
+
+  @media screen and (min-width: $tablet) {
+    background-position: 40px 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    background-position: 50px 32px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.58;
+
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 2.16;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.86;
+    }
+  }
+
+  &.is-hidden {
+    height: 240px;
+    overflow: hidden;
+    @media screen and (min-width: $tablet) {
+      height: 100px;
+    }
+  }
+}
+
+.feedback-continuation {
+  display: block;
+
+  width: 32px;
+  min-height: 10px;
+  background-image: url("../image/about-us-dots.png");
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+.feedback-name {
+  &__text {
+    font-size: 14px;
+    line-height: 1.85;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.86;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 1.86;
+    }
+  }
+}
+
+.slick-dots.slick-dots--bottom {
+  bottom: -45px;
+  & .dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  & .dot::before {
+    display: block;
+    content: "";
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+
+    background-image: url("../image/about-us-ellipse-gray.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  & .slick-active .dot::before {
+    background-image: url("../image/about-us-icon-house.png");
+  }
+}

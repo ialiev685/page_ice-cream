@@ -1,0 +1,97 @@
+.section-hero {
+  &__container {
+    position: relative;
+
+    padding-top: 137px;
+    padding-bottom: 160px;
+
+    height: 446px;
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 15px;
+      padding-bottom: 0px;
+
+      height: 312px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-top: 84px;
+
+      height: 578px;
+    }
+  }
+
+  &__container::before {
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      bottom: 0;
+      // c учетом отстутов слева и справа
+      left: 274px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      left: 479px;
+    }
+  }
+
+  &__caption {
+    margin-bottom: 19px;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__button.inverse {
+    margin-right: 8px;
+  }
+
+  &__wrapper-product {
+    margin-bottom: 66px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 112px;
+    }
+  }
+  &__wrapper-eco {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+
+      margin-left: 120px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-left: 180px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 7px;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__wrapper-establishments {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      top: 14px;
+      right: 44px;
+
+      display: block;
+    }
+    @media screen and (min-width: $desktop) {
+      top: 78px;
+      right: 115px;
+    }
+  }
+
+  &__wrapper-cafe {
+    margin-bottom: 14px;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 18px;
+    }
+  }
+}

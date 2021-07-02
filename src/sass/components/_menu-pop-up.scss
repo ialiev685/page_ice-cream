@@ -1,0 +1,17 @@
+.menu-pop-up {
+  z-index: 1;
+  @media screen and (max-width: $desktop - 1) {
+    display: none;
+
+    width: 250px;
+    height: 100vh;
+
+    background-color: var(--color-bg-menu-mobile);
+
+    padding: 123px 0;
+  }
+
+  &__arrow-right {
+    stroke: var(--color-text-accent);
+  }
+}

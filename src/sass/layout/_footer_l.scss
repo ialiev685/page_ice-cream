@@ -1,0 +1,90 @@
+.footer {
+  &__container {
+    position: relative;
+
+    padding-top: 113px;
+    padding-bottom: 25px;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      padding-top: 158px;
+      padding-bottom: 18px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-top: 165px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__caption {
+    margin-bottom: 43px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 120px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 107px;
+    }
+  }
+
+  &__caption-bold {
+    display: block;
+
+    margin-top: 17px;
+    @media screen and (min-width: $desktop) {
+      margin-top: 15px;
+    }
+  }
+  &__wrapper {
+    margin-bottom: 65px;
+  }
+  &__list-social {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__item-social:not(:last-child) {
+    margin-right: 28px;
+    @media screen and (min-width: $tablet) {
+      margin-right: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 25px;
+    }
+  }
+
+  &__link-social {
+    margin-bottom: 46px;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
+    }
+  }
+  &__contact {
+    text-align: right;
+  }
+
+  &__all-rights {
+    margin: 0 auto;
+  }
+
+  &__all-rights::before {
+    position: absolute;
+    left: 0;
+    bottom: 89px;
+
+    display: block;
+    content: "";
+    width: 320px;
+
+    @media screen and (min-width: $tablet) {
+      bottom: 73px;
+
+      width: 768px;
+    }
+    @media screen and (min-width: $desktop) {
+      bottom: 45px;
+      width: 1200px;
+    }
+    border: 0.5px solid var(--color-border-1);
+  }
+}

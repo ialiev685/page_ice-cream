@@ -1,0 +1,124 @@
+.section-contacts {
+  &__item {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    height: 427px;
+
+    @media screen and (min-width: $tablet) {
+      height: 544px;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 572px;
+    }
+  }
+  &__establishment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 4px;
+
+    width: 80px;
+    height: 16px;
+
+    color: var(--color-text-inverse);
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.86;
+    }
+  }
+
+  &__establishment--cafe {
+    width: 80px;
+    height: 16px;
+
+    background-color: var(--color-bg-cafe);
+    @media screen and (min-width: $tablet) {
+      width: 73px;
+      height: 28px;
+    }
+  }
+
+  &__establishment--foodtrack {
+    width: 130px;
+    height: 16px;
+
+    background-color: var(--color-bg-foodtrack);
+    @media screen and (min-width: $tablet) {
+      width: 138px;
+      height: 28px;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 1.66;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.83;
+    }
+  }
+  &__adress,
+  &__opening-hours,
+  &__caption-weekday,
+  &__caption-city {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+    }
+  }
+
+  &__working-hours {
+    border-top: 1px solid var(--color-border-1);
+    border-bottom: 1px solid var(--color-border-1);
+  }
+
+  &__opening-hours {
+    color: var(--color-text-pink);
+  }
+  &__adress {
+    display: block;
+
+    font-style: normal;
+
+    color: var(--color-text-second);
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+
+    width: 161px;
+    height: 44px;
+  }
+
+  &__arrow-right {
+    margin-left: 15px;
+  }
+  &__arrow-right {
+    stroke: var(--color-text-accent);
+  }
+
+  &__arrow-right--inverse {
+    stroke: var(--color-text-inverse);
+  }
+}
