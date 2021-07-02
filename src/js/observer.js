@@ -5,18 +5,12 @@ const observerOn = new IntersectionObserver(observerHandlerOn, {
   threshold: 0.15,
 });
 
-observerOn.observe(refs.sectionOurProductEl);
+observerOn.observe(refs.sectionHeroEl);
 
 function observerHandlerOn([entries]) {
-  if (entries.isIntersecting) refs.scrollUpEl.classList.remove("is-hidden");
-}
-//выключить
-const observerOff = new IntersectionObserver(observerHandlerOff, {
-  threshold: 0.15,
-});
-
-observerOff.observe(refs.sectionHeaderEl);
-
-function observerHandlerOff([entries]) {
-  if (entries.isIntersecting) refs.scrollUpEl.classList.add("is-hidden");
+  if (!entries.isIntersecting) {
+    refs.scrollUpEl.classList.remove("is-hidden");
+  } else if (entries.isIntersecting) {
+    refs.scrollUpEl.classList.add("is-hidden");
+  }
 }

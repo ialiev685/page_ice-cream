@@ -2,7 +2,6 @@ import refs from "./refs.js";
 
 refs.navlinkEl.addEventListener("click", (e) => {
   event.preventDefault();
-  console.dir(e.target);
 
   switch (e.target.textContent.trim()) {
     case "Home":

@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="./css/main.min.css" /> -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -82,7 +82,7 @@
       </div>
     </header>
     <main>
-      <section class="section-hero">
+      <section class="section-hero" id="js-hero">
         <div class="container section-hero__container">
           <div class="section-hero__wrapper-product">
             <h1 class="section-hero__caption">
@@ -115,14 +115,14 @@
           </div>
         </div>
       </section>
-      <section class="section-products">
+      <section class="section-products" id="js-our-product">
         <div class="container section-products__container">
           <h2 class="section-products__caption">
             100% natural
             <span class="section-products__caption-bold">products</span>
           </h2>
           <ul class="list section-products__list">
-            <li class="section-products__item" id="js-our-product">
+            <li class="section-products__item">
               <img
                 class="section-products__image"
                 src="./image/product-one.png"
@@ -214,7 +214,7 @@
               />
             </div>
             <div class="section-how-made__description">
-              <p class="text section-how-made__text">
+              <p class="text section-how-made__text is-hidden js-how-made-text">
                 <span class="section-how-made__primary-text">
                   Практически все из нас знают, что есть полезная и вредная еда,
                   мы делим все продукты на плохие и хорошие, и это действительно
@@ -242,7 +242,7 @@
                 </span>
               </p>
               <div class="section-how-made__bg-milk"></div>
-              <button class="button section-how-made__button">
+              <button class="button section-how-made__button js-how-made-btn">
                 Read more
                 <svg
                   width="8"
@@ -327,7 +327,7 @@
               />
             </div>
           </div>
-          <div class="feedback-discription">
+          <div class="feedback-discription is-hidden js-about-us-text">
             <div>
               <p class="text feedback-discription__text">
                 Практически все из нас знают, что есть полезная и вредная еда,
@@ -370,7 +370,7 @@
               </p>
             </div>
           </div>
-          <span class="feedback-continuation"></span>
+          <span class="feedback-continuation js-about-us-btn"></span>
           <div class="feedback-name">
             <p class="text feedback-name__text">Alexandra, New York</p>
             <p class="text feedback-name__text">Alina, Chicago</p>
@@ -550,21 +550,33 @@
         <div class="footer__wrapper">
           <ul class="list footer__list-social">
             <li class="footer__item-social">
-              <a href="#" class="link footer__link-social">
+              <a
+                href="https://github.com/ialiev685/page_ice-cream/tree/gh-pages"
+                class="link footer__link-social"
+                target="_blank"
+              >
                 <svg width="19" height="19" class="footer__icon-social">
                   <use href="./image/svg/symbol-defs.svg#icon-github"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__item-social">
-              <a href="#" class="link footer__link-social">
+              <a
+                href="https://telegram.org/"
+                class="link footer__link-social"
+                target="_blank"
+              >
                 <svg width="19" height="15" class="footer__icon-social">
                   <use href="./image/svg/symbol-defs.svg#icon-telegram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__item-social">
-              <a href="#" class="link footer__link-social">
+              <a
+                href="https://ru-ru.facebook.com/"
+                class="link footer__link-social"
+                target="_blank"
+              >
                 <svg width="9" height="19" class="footer__icon-social">
                   <use href="./image/svg/symbol-defs.svg#icon-facebook"></use>
                 </svg>
@@ -574,7 +586,7 @@
 
           <p class="text footer__contact">
             Feel free to contact
-            <a class="link footer__link-contact" href="#">
+            <a class="link footer__link-contact" href="tel:+61 (0) 383 766 284">
               +61 (0) 383 766 284</a
             >
           </p>
@@ -600,6 +612,5 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script src="./src/index.js" type="module"></script>
   </body>
 </html>

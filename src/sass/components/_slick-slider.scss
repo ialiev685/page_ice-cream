@@ -25,14 +25,25 @@
       line-height: 1.86;
     }
   }
+
+  &.is-hidden {
+    height: 240px;
+    overflow: hidden;
+    @media screen and (min-width: $tablet) {
+      height: 100px;
+    }
+  }
 }
 
 .feedback-continuation {
   display: block;
 
   width: 32px;
-  height: 4px;
+  min-height: 10px;
   background-image: url("../image/about-us-dots.png");
+  background-repeat: no-repeat;
+
+  cursor: pointer;
 }
 
 .feedback-name {

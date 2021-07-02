@@ -82,29 +82,24 @@
     }
   }
 
-  &__text-second {
-    display: block;
-
-    margin-bottom: 17px;
-
-    @media screen and(min-width: $tablet) {
-      margin-bottom: 62px;
-    }
-    @media screen and(min-width: $desktop) {
-      margin-bottom: 45px;
-    }
-  }
-
   &__button {
     padding: 17px 43px;
 
     font-size: 14px;
     line-height: 1.28;
 
+    margin-top: 17px;
+
     // color: var(--color-text-accent);
     @media screen and(min-width: $tablet) {
       font-size: 16px;
       line-height: 1.31;
+
+      margin-top: 62px;
+    }
+
+    @media screen and(min-width: $desktop) {
+      margin-top: 45px;
     }
   }
 

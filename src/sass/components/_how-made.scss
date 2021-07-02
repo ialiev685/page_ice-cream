@@ -80,6 +80,11 @@
     height: auto;
   }
 
+  &__text.is-hidden {
+    height: 290px;
+    overflow: hidden;
+  }
+
   &__text,
   &__desc {
     font-size: 12px;
