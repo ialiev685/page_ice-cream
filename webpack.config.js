@@ -12,7 +12,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
-    // assetModuleFilename: "assets/[name][ext]", для asset/resourse
+    assetModuleFilename: "image/[name][ext]", //для asset/resourse
   },
 
   module: {
@@ -29,12 +29,23 @@ module.exports = {
         ],
       },
       {
+        test: /\.html$/i,
+        loader: "html-srcsets-loader",
+        options: {
+          options: {
+            attrs: ["img:src", ":srcset"],
+          },
+        },
+      },
+      {
         test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
         // More information here https://webpack.js.org/guides/asset-modules/
 
-        type: "asset/inline",
+        type: "asset/resource",
+        // generator: {
+        //   filename: "image/[name][ext]",
+        // },
       },
-
       {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
@@ -51,7 +62,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({ template: "src/index.html" }),
     new CopyPlugin({
-      patterns: [{ from: "src/image", to: "image" }],
+      patterns: [{ from: "src/image/svg", to: "image/svg" }],
     }),
   ],
   devServer: {
